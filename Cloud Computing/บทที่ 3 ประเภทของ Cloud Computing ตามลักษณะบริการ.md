@@ -165,8 +165,6 @@ Cloud Computing ประกอบด้วย 2 ชั้นหลัก:
 ![ความสัมพันธ์ของ IaaS, PaaS และ SaaS](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure3.5.png)  
 *รูปที่ 3.5 ความสัมพันธ์ของ IaaS, PaaS และ SaaS*
 
----
-
 ### ✅ แนวคิดภาพรวม
 สถาปัตยกรรม Cloud ถูกออกแบบเป็น **ชั้น (Layer)** เพื่อแยกความรับผิดชอบของแต่ละบริการดังนี้:
 - **ชั้นล่างสุด (Infrastructure Layer)** → IaaS เป็นรากฐานของระบบ
