@@ -116,3 +116,39 @@ Hybrid Cloud คือการรวมข้อดีของ **Private Cloud
 <sub>[⬆ Home](#สารบัญ)</sub>
 
 ---
+
+## **4.2 ประเภททั้งหมดของการประมวลผลแบบกลุ่มเมฆ**
+
+จากบทที่ 3 ได้กล่าวถึง **Service Models** ได้แก่:
+- **IaaS** (Infrastructure as a Service)
+- **PaaS** (Platform as a Service)
+- **SaaS** (Software as a Service)
+
+ซึ่งสามารถทำงานบน **Deployment Models** ได้ทุกแบบ:
+- Private Cloud
+- Public Cloud
+- Community Cloud
+- Hybrid Cloud
+
+ดังแสดงในตารางด้านล่าง:
+
+---
+
+### ✅ ความสัมพันธ์ระหว่าง Service Models และ Deployment Models
+
+| Service Model | Deployment Models | ตัวอย่าง |
+|-------------|---------------------|-----------|
+| **SaaS** | Private Cloud, Community Cloud, Public Cloud, Hybrid Cloud | Public Cloud → ใช้งานฟรี เช่น Gmail, Google Classroom |
+| **PaaS** | Private Cloud, Community Cloud, Public Cloud, Hybrid Cloud | Public Cloud → ชำระค่าบริการ เช่น GAE (Google App Engine) |
+| **IaaS** | Private Cloud, Community Cloud, Public Cloud, Hybrid Cloud | Public Cloud → ชำระค่าบริการ เช่น EC2 (Amazon) |
+
+---
+
+📌 **สรุป:**  
+ทุก Service Model สามารถใช้ได้กับทุก Deployment Model แต่:
+- **Public Cloud** อาจมีทั้งแบบฟรี (SaaS เช่น Gmail) และแบบจ่ายเงิน (PaaS, IaaS)
+- **Private Cloud** มักใช้ในองค์กรที่ต้องการความปลอดภัยสูง
+
+<sub>[⬆ Home](#สารบัญ)</sub>
+
+---
