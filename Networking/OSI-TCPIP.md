@@ -20,6 +20,17 @@ OSI Model มี 7 ชั้น (Layer) โดยแต่ละชั้นม�
 - Data Link → Ethernet
 - Physical → สาย UTP, Fiber
 
+### ✅ อุปกรณ์ที่เกี่ยวข้องในแต่ละชั้น
+| Layer | ชื่อ | ตัวอย่างอุปกรณ์ |
+|-------|------|------------------|
+| 7 | Application | Proxy Server, Load Balancer |
+| 6 | Presentation | Gateway (บางกรณี) |
+| 5 | Session | Gateway, Application Server |
+| 4 | Transport | Firewall (ตรวจ TCP/UDP) |
+| 3 | Network | Router, Layer 3 Switch |
+| 2 | Data Link | Switch, Bridge |
+| 1 | Physical | Hub, Repeater, สาย LAN, Fiber |
+
 ---
 
 ## 🌍 TCP/IP Model
