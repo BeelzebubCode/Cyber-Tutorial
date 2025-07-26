@@ -53,7 +53,6 @@ Cloud Computing ประกอบด้วย 2 ชั้นหลัก:
 ✔ **PaaS** → นักพัฒนาพัฒนาและ Deploy แอป  
 ✔ **IaaS** → ให้ทรัพยากร Virtual สำหรับควบคุมเอง  
 
-<sub>[⬆ Home](#สารบัญ)</sub>
 ---
 
 ### ✅ ความสัมพันธ์ระหว่าง Service Models
@@ -89,6 +88,7 @@ Cloud Computing ประกอบด้วย 2 ชั้นหลัก:
 | **PaaS** | ตัวบ้าน 🏠 | Infrastructure + Runtime | เขียนโค้ด, Deploy | Heroku |
 | **SaaS** | บ้านพร้อมอยู่ 🛋 | ทุกอย่าง (Infra → App) | ใช้งาน | Gmail |
 
+<sub>[⬆ Home](#สารบัญ)</sub>
 ---
 
 ## **3.3.1 IaaS Architecture**
