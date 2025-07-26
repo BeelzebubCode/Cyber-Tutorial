@@ -26,7 +26,7 @@ Cloud Computing ประกอบด้วย 2 ชั้นหลัก:
 ![โครงสร้างพื้นฐานของ Cloud](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure3.1.png)  
 *รูปที่ 3.1 โครงสร้างพื้นฐานของ Cloud Computing*
 
-<small>[⬆ Home](#สารบัญ)</small>
+<sub>[⬆ Home](#สารบัญ)</sub>
 ---
 
 ## **3.2 สภาพแวดล้อมพื้นฐานของ Cloud**
