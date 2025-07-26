@@ -94,7 +94,7 @@ Cloud Computing ประกอบด้วย 2 ชั้นหลัก:
 
 ---
 
-## **3.3.1 IaaS Architecture**
+## **3.3.1 IaaS Architecture (Infrastructure as a Service)**
 
 ![สถาปัตยกรรม IaaS](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure3.4.png)  
 *รูปที่ 3.4 สถาปัตยกรรม IaaS*  
