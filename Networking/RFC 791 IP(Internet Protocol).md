@@ -1,4 +1,4 @@
-# RFC 791 – Internet Protocol (IPv4) Summary (พร้อมคำแปลภาษาไทย)
+# RFC 791 – Internet Protocol (IPv4) Summary
 
 ## 1. Overview (ภาพรวม)
 - กำหนดมาตรฐาน **IPv4** (ชั้น Network ใน OSI Model)
