@@ -1,21 +1,21 @@
+# RFC 791 – Internet Protocol (IPv4) Summary (พร้อมคำแปลภาษาไทย)
 
-# RFC 791 – Internet Protocol (IPv4) Summary
+## 1. Overview (ภาพรวม)
+- กำหนดมาตรฐาน **IPv4** (ชั้น Network ใน OSI Model)
+- หน้าที่:
+  - **Addressing (การระบุตำแหน่ง):** ใช้ IP ระบุแหล่งที่มาและปลายทาง
+  - **Routing (การเลือกเส้นทาง):** เลือกเส้นทางที่เหมาะสมเพื่อส่ง Packet
+  - **Fragmentation (การแบ่งชิ้น):** แบ่งข้อมูลถ้า MTU ของเครือข่ายเล็กเกินไป
 
-## 1. Overview
-- Defines **IPv4** standard (Network Layer – OSI Layer 3).
-- Provides:
-  - **Addressing**: Identify source and destination.
-  - **Routing**: Choose best path for packet.
-  - **Fragmentation**: Split datagram if network MTU is too small.
-
-**Characteristics:**
-- Connectionless (no session).
-- Best-Effort Delivery (no guarantee).
-- Stateless.
+**ลักษณะของ IPv4:**
+- Connectionless (ไม่ต้องสร้างการเชื่อมต่อก่อน)
+- Best-Effort Delivery (ไม่รับประกันถึงปลายทาง)
+- Stateless (ไม่มีการจำสถานะการสื่อสาร)
 
 ---
 
-## 2. IPv4 Header Structure (20–60 Bytes)
+## 2. IPv4 Header Structure (โครงสร้าง Header)
+ความยาว: 20–60 Bytes
 
 ```
 0                   1                   2                   3
@@ -37,34 +37,34 @@
 
 ---
 
-### Field Description
-| Field                | Size    | Description                                 |
-|----------------------|---------|---------------------------------------------|
-| Version             | 4 bits  | IP version (IPv4 = 4)                      |
-| IHL                 | 4 bits  | Header length in 32-bit words              |
-| Type of Service     | 8 bits  | QoS, DSCP                                  |
-| Total Length        | 16 bits | Full packet length (header + data)         |
-| Identification      | 16 bits | Used for fragmentation                     |
-| Flags               | 3 bits  | DF (Don't Frag), MF (More Frag)            |
-| Fragment Offset     | 13 bits | Fragment order                             |
-| Time to Live (TTL)  | 8 bits  | Hop count, decrements each router          |
-| Protocol            | 8 bits  | Upper layer (TCP=6, UDP=17, ICMP=1)        |
-| Header Checksum     | 16 bits | Check header integrity                     |
-| Source Address      | 32 bits | Sender IP                                  |
-| Destination Address | 32 bits | Receiver IP                                |
-| Options + Padding   | Var.    | Optional fields                            |
+### คำอธิบาย Field
+| Field                | ขนาด    | คำอธิบาย                                           |
+|----------------------|---------|------------------------------------------------------|
+| Version             | 4 บิต   | หมายเลขเวอร์ชัน (IPv4 = 4)                         |
+| IHL                 | 4 บิต   | ความยาว Header (หน่วย 32 บิต word)                |
+| Type of Service     | 8 บิต   | การตั้งค่าคุณภาพบริการ (QoS, DSCP)                |
+| Total Length        | 16 บิต  | ความยาวรวมของ Packet (Header + Data)               |
+| Identification      | 16 บิต  | ใช้สำหรับ Fragmentation                             |
+| Flags               | 3 บิต   | ควบคุม Fragment (DF = ห้ามแตก, MF = มีส่วนต่อ)    |
+| Fragment Offset     | 13 บิต  | ตำแหน่งของ Fragment ใน Datagram                     |
+| TTL                 | 8 บิต   | อายุของ Packet ลดลงเมื่อผ่าน Router                 |
+| Protocol            | 8 บิต   | โปรโตคอลที่อยู่ใน Payload (TCP=6, UDP=17, ICMP=1) |
+| Header Checksum     | 16 บิต  | ตรวจสอบความถูกต้องของ Header                        |
+| Source Address      | 32 บิต  | IP ต้นทาง                                           |
+| Destination Address | 32 บิต  | IP ปลายทาง                                          |
+| Options + Padding   | แปรผัน  | ใช้สำหรับการทำงานพิเศษ                              |
 
 ---
 
-## 3. Key Mechanisms
-- **Type of Service (ToS)**: QoS settings.
-- **TTL**: Prevent routing loops.
-- **Fragmentation**: For small MTU networks.
-- **Checksum**: Header integrity check.
+## 3. Key Mechanisms (กลไกสำคัญ)
+- **Type of Service (ToS):** บอกคุณภาพบริการที่ต้องการ
+- **TTL:** ป้องกันการวนลูป (Loop) โดยตั้งอายุ Packet
+- **Fragmentation:** แบ่ง Packet ให้เหมาะกับ MTU
+- **Checksum:** ตรวจสอบความถูกต้องของ Header
 
 ---
 
-## 4. Example (Wireshark)
+## 4. ตัวอย่างจาก Wireshark
 ```
 Internet Protocol Version 4, Src: 192.168.1.10, Dst: 8.8.8.8
     Version: 4
@@ -79,17 +79,18 @@ Internet Protocol Version 4, Src: 192.168.1.10, Dst: 8.8.8.8
 
 ---
 
-## 5. Features and Limitations
-- Pros:
-  - Flexible, interoperable, widely adopted.
-- Cons:
-  - Limited address space (≈4.3B).
-  - No built-in security → IPsec required.
-  - No guarantee of delivery/order.
+## 5. จุดเด่นและข้อจำกัด
+**ข้อดี:**
+- ทำงานได้หลากหลายเครือข่าย (Flexible, Interoperable)
+
+**ข้อจำกัด:**
+- Address จำกัด (~4.3 พันล้าน IP)
+- ไม่มีระบบความปลอดภัยในตัว → ต้องใช้ IPsec
+- ไม่รับประกันการส่งถึงและลำดับข้อมูล
 
 ---
 
-## 6. Related RFCs
+## 6. RFC ที่เกี่ยวข้อง
 - RFC 768 – UDP
 - RFC 793 – TCP
 - RFC 792 – ICMP
