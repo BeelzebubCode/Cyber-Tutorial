@@ -48,8 +48,8 @@ TCP/IP Model มี 4 ชั้น (บางตำราแยกเป็น 5
 |-------------------|--------------------|------------------------|---------------------------|
 | Application       | Layer 5-7         | Proxy, Load Balancer, Web Server | HTTP, HTTPS, FTP, SMTP, DNS |
 | Transport         | Layer 4           | Firewall (Port Filter), Load Balancer | TCP, UDP |
-| Internet          | Layer 3           | Router, Layer 3 Switch | IP, ICMP, ARP |
-| Network Access    | Layer 1-2         | Switch, Hub, NIC, Access Point | Ethernet, PPP |
+| Internet          | Layer 3           | Router, Layer 3 Switch | IP, ICMP |
+| Network Access    | Layer 1-2         | Switch, Hub, NIC, Access Point | Ethernet, PPP, ARP |
 
 **โปรโตคอลหลักใน TCP/IP**
 - Application → HTTP, DNS, FTP
