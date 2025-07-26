@@ -37,7 +37,7 @@ Cloud Computing ประกอบด้วย 2 ชั้นหลัก:
 ![สภาพแวดล้อมพื้นฐานของ Cloud](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure3.2.png)  
 *รูปที่ 3.2 สภาพแวดล้อมพื้นฐานของ Cloud Computing*
 
-[⬆ Home](#สารบัญ)
+<sub>[⬆ Home](#สารบัญ)</sub>
 ---
 
 ## **3.3 ประเภทของการให้บริการ (Service Models)**
@@ -53,7 +53,7 @@ Cloud Computing ประกอบด้วย 2 ชั้นหลัก:
 ✔ **PaaS** → นักพัฒนาพัฒนาและ Deploy แอป  
 ✔ **IaaS** → ให้ทรัพยากร Virtual สำหรับควบคุมเอง  
 
-[⬆ Home](#สารบัญ)
+<sub>[⬆ Home](#สารบัญ)</sub>
 ---
 
 ### ✅ ความสัมพันธ์ระหว่าง Service Models
@@ -108,7 +108,7 @@ Cloud Computing ประกอบด้วย 2 ชั้นหลัก:
 ✔ Scale ได้ง่าย  
 ✔ ลดต้นทุน Hardware
 
-[⬆ Home](#สารบัญ)
+<sub>[⬆ Home](#สารบัญ)</sub>
 ---
 
 ## **3.3.2 PaaS (Platform as a Service)**
@@ -137,7 +137,7 @@ Cloud Computing ประกอบด้วย 2 ชั้นหลัก:
 - **Developer** → ใช้ PaaS เพื่อ Deploy แอป
 - **User** → ใช้แอปที่รันบน PaaS ผ่านอินเทอร์เน็ต (Web/Mobile)
 
-[⬆ Home](#สารบัญ)
+<sub>[⬆ Home](#สารบัญ)</sub>
 ---
 
 ## **3.3.3 SaaS (Software as a Service)**
@@ -151,7 +151,7 @@ Cloud Computing ประกอบด้วย 2 ชั้นหลัก:
 ✔ ใช้จากทุกอุปกรณ์ที่มีอินเทอร์เน็ต  
 ✔ จ่ายตามการใช้งานจริง
 
-[⬆ Home](#สารบัญ)
+<sub>[⬆ Home](#สารบัญ)</sub>
 ---
 
 ## **3.3.4 ความสัมพันธ์ของ IaaS, PaaS และ SaaS**
@@ -189,7 +189,7 @@ Cloud Computing ประกอบด้วย 2 ชั้นหลัก:
 ✔ หากไม่มี **PaaS** → การสร้าง SaaS จะซับซ้อนขึ้นมาก  
 ✔ SaaS พึ่ง PaaS และ IaaS ในการทำงานอย่างเต็มรูปแบบ
 
-[⬆ Home](#สารบัญ)
+<sub>[⬆ Home](#สารบัญ)</sub>
 ---
 
 ## **3.4 การประมวลผลแบบกลุ่มเมฆประเภทอื่น**
@@ -202,7 +202,7 @@ Cloud Computing ประกอบด้วย 2 ชั้นหลัก:
 | Cloud Storage | Storage as a Service | Storage และ Database | AWS S3 |
 | Cloud Infrastructure | IaaS | Virtualization | AWS EC2 |
 
-[⬆ Home](#สารบัญ)
+<sub>[⬆ Home](#สารบัญ)</sub>
 ---
 
 ## **3.5 สรุป**
@@ -210,6 +210,7 @@ Cloud Computing ประกอบด้วย 2 ชั้นหลัก:
 ✔ PaaS = นักพัฒนา  
 ✔ IaaS = องค์กรที่ต้องการควบคุมสูงสุด  
 
+<sub>[⬆ Home](#สารบัญ)</sub>
 ---
 
 ## **3.6 คำถามท้ายบท (พร้อมเฉลย ✅)**
@@ -269,4 +270,4 @@ Cloud Computing ประกอบด้วย 2 ชั้นหลัก:
 
 **สรุป:** ทั้งหมดนี้เป็น SaaS เพราะผู้ใช้เข้าถึงผ่านอินเทอร์เน็ตโดยไม่ต้องติดตั้งหรือดูแลเซิร์ฟเวอร์เอง
 
-[⬆ Home](#สารบัญ)
+<sub>[⬆ Home](#สารบัญ)</sub>
