@@ -56,8 +56,7 @@
 
 ---
 
-## 3. Key Mechanisms 
-# IPv4 Key Mechanisms (กลไกสำคัญตาม RFC 791)
+## 3. IPv4 Key Mechanisms (กลไกสำคัญตาม RFC 791)
 
 ## 1. Type of Service (ToS) – บอกคุณภาพของบริการ
 - **ตำแหน่งใน Header:** 8 บิต (ปัจจุบันใช้ DSCP)
