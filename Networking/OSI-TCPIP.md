@@ -50,3 +50,70 @@ TCP/IP Model มี 4 ชั้น (บางตำราแยกเป็น 5
 📌 **Tip จำง่าย OSI**:  
 `Please Do Not Throw Sausage Pizza Away`  
 (Physical, Data Link, Network, Transport, Session, Presentation, Application)
+
+---
+
+## 🔍 การทำงาน End-to-End (Sender → Receiver) ตาม OSI Model
+
+### ✅ ขั้นตอนฝั่งผู้ส่ง (Sender) – Encapsulation
+1. **Application Layer (ชั้น 7):**  
+   แอปพลิเคชันสร้างข้อมูล เช่น ผู้ใช้ส่งข้อความผ่าน HTTP  
+   **Output:** Data
+
+2. **Presentation Layer (ชั้น 6):**  
+   แปลงข้อมูล → Encoding, Compression, Encryption  
+   **Output:** Data ที่ถูกเข้ารหัส
+
+3. **Session Layer (ชั้น 5):**  
+   จัดการเซสชัน สร้างการเชื่อมต่อกับผู้รับ  
+   **Output:** Data พร้อม Session Info
+
+4. **Transport Layer (ชั้น 4):**  
+   แบ่งข้อมูลเป็น **Segment** (TCP) หรือ **Datagram** (UDP) และใส่ **Port**  
+   **Output:** Segment (มี TCP/UDP Header)
+
+5. **Network Layer (ชั้น 3):**  
+   เพิ่ม **IP Header** (Source IP, Destination IP) → ได้ **Packet**  
+   **Output:** Packet
+
+6. **Data Link Layer (ชั้น 2):**  
+   เพิ่ม **MAC Header และ Trailer (FCS)** → ได้ **Frame**  
+   **Output:** Frame
+
+7. **Physical Layer (ชั้น 1):**  
+   แปลงเป็น **Bits (0/1)** ส่งออกผ่านสาย (UTP, Fiber) หรือ Wireless  
+   **Output:** Binary Signal
+
+---
+
+### ✅ ขั้นตอนฝั่งผู้รับ (Receiver) – Decapsulation
+1. **Physical Layer:** รับสัญญาณไฟฟ้าหรือแสง → แปลงเป็น Bits  
+2. **Data Link Layer:** ตรวจสอบ FCS, MAC Address → ถอด Frame Header → ได้ Packet  
+3. **Network Layer:** ตรวจสอบ IP Address → ถอด IP Header → ได้ Segment  
+4. **Transport Layer:** รวม Segment → ตรวจสอบ Port → ได้ Data  
+5. **Session Layer:** จัดการเซสชัน → ส่งต่อ Data  
+6. **Presentation Layer:** ถอดรหัส, Decompression → ได้ข้อมูลพร้อมใช้งาน  
+7. **Application Layer:** ส่งให้แอปพลิเคชันแสดงผล เช่น เว็บเพจ, ข้อความ  
+
+---
+
+### ✅ ภาพรวม Encapsulation & Decapsulation
+Sender: Data → Segment → Packet → Frame → Bits
+Receiver: Bits → Frame → Packet → Segment → Data
+
+---
+
+### ✅ OSI vs TCP/IP
+- การทำงานที่อธิบายด้านบนเป็น **ตาม OSI Model (7 ชั้น)**  
+- ใน **TCP/IP Model (4 ชั้น)** จะรวม:
+  - Application = OSI Layer 5-7  
+  - Transport = OSI Layer 4  
+  - Internet = OSI Layer 3  
+  - Network Access = OSI Layer 1-2  
+
+---
+
+📌 **สรุป:**  
+- Encapsulation = ฝั่งผู้ส่ง → เพิ่ม Header ในแต่ละชั้น  
+- Decapsulation = ฝั่งผู้รับ → ถอด Header ในแต่ละชั้น  
+
