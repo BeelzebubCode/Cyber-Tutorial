@@ -20,16 +20,16 @@ OSI Model มี 7 ชั้น (Layer) โดยแต่ละชั้นม�
 - Data Link → Ethernet
 - Physical → สาย UTP, Fiber
 
-### ✅ อุปกรณ์ที่เกี่ยวข้องในแต่ละชั้น
-| Layer | ชื่อ | ตัวอย่างอุปกรณ์ |
-|-------|------|------------------|
-| 7 | Application | Proxy Server, Load Balancer |
-| 6 | Presentation | Gateway (บางกรณี) |
-| 5 | Session | Gateway, Application Server |
-| 4 | Transport | Firewall (ตรวจ TCP/UDP) |
-| 3 | Network | Router, Layer 3 Switch |
-| 2 | Data Link | Switch, Bridge |
-| 1 | Physical | Hub, Repeater, สาย LAN, Fiber |
+### 🗂 อุปกรณ์และโปรโตคอลในแต่ละชั้นของ OSI Model
+| Layer | ชื่อ | อุปกรณ์ที่เกี่ยวข้อง | Protocols ที่เกี่ยวข้อง |
+|-------|------|-----------------------|---------------------------|
+| **7** | Application | Proxy Server, Load Balancer, Web Server | HTTP, HTTPS, FTP, SMTP, DNS |
+| **6** | Presentation | Gateway (บางกรณี) | SSL/TLS, JPEG, MPEG |
+| **5** | Session | Gateway, Application Server | NetBIOS, RPC |
+| **4** | Transport | Firewall (ตรวจ TCP/UDP), Load Balancer | TCP, UDP |
+| **3** | Network | Router, Layer 3 Switch | IP, ICMP, ARP, RIP, OSPF |
+| **2** | Data Link | Switch, Bridge | Ethernet, PPP, HDLC |
+| **1** | Physical | Hub, Repeater, สาย UTP, Fiber | ไม่มี (ใช้สัญญาณไฟฟ้าหรือแสง) |
 
 ---
 
@@ -42,6 +42,14 @@ TCP/IP Model มี 4 ชั้น (บางตำราแยกเป็น 5
 | **3** | Transport | OSI Layer 4 |
 | **2** | Internet | OSI Layer 3 |
 | **1** | Network Access | OSI Layer 1-2 |
+
+### 🗂 อุปกรณ์และโปรโตคอลในแต่ละชั้นของ TCP/IP Model
+| Layer (TCP/IP)   | Mapping OSI       | อุปกรณ์ที่เกี่ยวข้อง | Protocols ที่เกี่ยวข้อง |
+|-------------------|--------------------|------------------------|---------------------------|
+| Application       | Layer 5-7         | Proxy, Load Balancer, Web Server | HTTP, HTTPS, FTP, SMTP, DNS |
+| Transport         | Layer 4           | Firewall (Port Filter), Load Balancer | TCP, UDP |
+| Internet          | Layer 3           | Router, Layer 3 Switch | IP, ICMP, ARP |
+| Network Access    | Layer 1-2         | Switch, Hub, NIC, Access Point | Ethernet, PPP |
 
 **โปรโตคอลหลักใน TCP/IP**
 - Application → HTTP, DNS, FTP
