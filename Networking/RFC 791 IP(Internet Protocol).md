@@ -56,11 +56,71 @@
 
 ---
 
-## 3. Key Mechanisms (กลไกสำคัญ)
-- **Type of Service (ToS):** บอกคุณภาพบริการที่ต้องการ
-- **TTL:** ป้องกันการวนลูป (Loop) โดยตั้งอายุ Packet
-- **Fragmentation:** แบ่ง Packet ให้เหมาะกับ MTU
-- **Checksum:** ตรวจสอบความถูกต้องของ Header
+## 3. Key Mechanisms 
+# IPv4 Key Mechanisms (กลไกสำคัญตาม RFC 791)
+
+## 1. Type of Service (ToS) – บอกคุณภาพของบริการ
+- **ตำแหน่งใน Header:** 8 บิต (ปัจจุบันใช้ DSCP)
+- **หน้าที่:** ระบุความต้องการของแพ็กเก็ต เช่น:
+  - Low Delay → สำหรับ VoIP, วิดีโอคอล
+  - High Throughput → สำหรับโหลดไฟล์ใหญ่
+- **การทำงาน:** Router ใช้ค่านี้ช่วยเลือกเส้นทางหรือวิธีส่งที่เหมาะสม
+
+**ตัวอย่างการใช้งาน:**
+- VoIP → ToS = Low Delay
+- FTP Download → ToS = High Throughput
+
+---
+
+## 2. TTL (Time To Live) – ป้องกันการวนลูป
+- **ตำแหน่งใน Header:** 8 บิต
+- **หน้าที่:** จำกัดอายุของแพ็กเก็ต ป้องกันการวนลูป (Routing Loop)
+- **วิธีทำงาน:** ค่า TTL ลดลง 1 ทุกครั้งที่ผ่าน Router
+- ถ้า TTL = 0 → Router ทิ้งแพ็กเก็ต และส่ง ICMP Error กลับ
+
+**ตัวอย่าง:**
+- เริ่ม TTL = 64 → ผ่าน 5 Router → TTL = 59
+- ถ้าวนลูปจน TTL = 0 → Packet ถูก Drop
+
+---
+
+## 3. Fragmentation – แบ่งแพ็กเก็ตให้เหมาะกับ MTU
+- **เหตุผล:** แต่ละเครือข่ายมีขนาด MTU ต่างกัน (Ethernet = 1500 bytes)
+- ถ้า Packet ใหญ่เกิน MTU → ต้องแตกเป็น Fragment
+- ใช้ 3 ฟิลด์ใน IPv4 Header:
+  - Identification → หมายเลขของ Datagram เดิม
+  - Flags → DF (Don't Fragment), MF (More Fragment)
+  - Fragment Offset → ระบุตำแหน่งของชิ้นส่วนในข้อมูลเดิม
+
+**ตัวอย่างการแตก Fragment:**
+- ข้อมูล 4000 bytes, MTU = 1500 bytes
+- จะได้:
+  - Fragment 1 = 1480 bytes (20 bytes เป็น Header)
+  - Fragment 2 = 1480 bytes
+  - Fragment 3 = 1040 bytes
+
+---
+
+## 4. Header Checksum – ตรวจสอบความถูกต้องของ Header
+- **ตำแหน่งใน Header:** 16 บิต
+- **หน้าที่:** ตรวจสอบเฉพาะ IPv4 Header (ไม่รวม Data)
+- **การทำงาน:** ทุกครั้งที่ Packet ผ่าน Router → ต้องคำนวณใหม่เพราะ TTL ลดลง
+- ถ้า Checksum ไม่ตรง → Packet เสีย → Drop
+
+**วิธีคำนวณ:**
+- บวกทุกค่าของ Header (เป็น 16 บิต)
+- ทำ One's Complement
+- เปรียบเทียบกับค่าในฟิลด์ Checksum
+
+---
+
+### สรุปสั้นๆ
+| กลไก            | หน้าที่                                      |
+|------------------|---------------------------------------------|
+| ToS             | ระบุคุณภาพบริการ (QoS)                    |
+| TTL             | จำกัดอายุแพ็กเก็ต ป้องกัน Loop            |
+| Fragmentation   | แบ่ง/รวมแพ็กเก็ตให้เหมาะกับ MTU          |
+| Header Checksum | ตรวจสอบความถูกต้องของ Header              |
 
 ---
 
