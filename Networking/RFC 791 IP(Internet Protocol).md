@@ -40,19 +40,19 @@
 ### คำอธิบาย Field
 | Field                | ขนาด    | คำอธิบาย                                           |
 |----------------------|---------|------------------------------------------------------|
-| Version             | 4 บิต   | หมายเลขเวอร์ชัน (IPv4 = 4)                         |
-| IHL                 | 4 บิต   | ความยาว Header (หน่วย 32 บิต word)                |
-| Type of Service     | 8 บิต   | การตั้งค่าคุณภาพบริการ (QoS, DSCP)                |
-| Total Length        | 16 บิต  | ความยาวรวมของ Packet (Header + Data)               |
-| Identification      | 16 บิต  | ใช้สำหรับ Fragmentation                             |
-| Flags               | 3 บิต   | ควบคุม Fragment (DF = ห้ามแตก, MF = มีส่วนต่อ)    |
-| Fragment Offset     | 13 บิต  | ตำแหน่งของ Fragment ใน Datagram                     |
-| TTL                 | 8 บิต   | อายุของ Packet ลดลงเมื่อผ่าน Router                 |
-| Protocol            | 8 บิต   | โปรโตคอลที่อยู่ใน Payload (TCP=6, UDP=17, ICMP=1) |
-| Header Checksum     | 16 บิต  | ตรวจสอบความถูกต้องของ Header                        |
-| Source Address      | 32 บิต  | IP ต้นทาง                                           |
-| Destination Address | 32 บิต  | IP ปลายทาง                                          |
-| Options + Padding   | แปรผัน  | ใช้สำหรับการทำงานพิเศษ                              |
+| Version             | 4 bits   | หมายเลขเวอร์ชัน (IPv4 = 4)                         |
+| IHL                 | 4 bits   | ความยาว Header (หน่วย 32 บิต word)                |
+| Type of Service     | 8 bits   | การตั้งค่าคุณภาพบริการ (QoS, DSCP)                |
+| Total Length        | 16 bits  | ความยาวรวมของ Packet (Header + Data)               |
+| Identification      | 16 bits  | ใช้สำหรับ Fragmentation                             |
+| Flags               | 3 bits   | ควบคุม Fragment (DF = ห้ามแตก, MF = มีส่วนต่อ)    |
+| Fragment Offset     | 13 bits  | ตำแหน่งของ Fragment ใน Datagram                     |
+| TTL                 | 8 bits   | อายุของ Packet ลดลงเมื่อผ่าน Router                 |
+| Protocol            | 8 bits   | โปรโตคอลที่อยู่ใน Payload (TCP=6, UDP=17, ICMP=1) |
+| Header Checksum     | 16 bits  | ตรวจสอบความถูกต้องของ Header                        |
+| Source Address      | 32 bits  | IP ต้นทาง                                           |
+| Destination Address | 32 bits  | IP ปลายทาง                                          |
+| Options + Padding   | Var.(แปรผัน)  | ใช้สำหรับการทำงานพิเศษ                              |
 
 ---
 
