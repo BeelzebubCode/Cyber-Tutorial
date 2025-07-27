@@ -176,6 +176,7 @@ CIA+P = **Confidentiality + Integrity + Availability + Privacy**
 - **Hypervisor** → ซอฟต์แวร์ตัวกลางควบคุม VM ทั้งหมด
 - **hw0** → Hardware จริงของ Provider
 - **diskU** → ดิสก์เสมือนของ domU ที่เก็บข้อมูลลูกค้า
+- **disk0** → ฮาร์ดดิสก์จริงๆ ที่เป็นของ dom0 และเป็นเจ้าของโดย provider
 - **consumerX's files** → ข้อมูลของผู้ใช้ที่เก็บใน diskU
 - **app0 / appU** → แอปพลิเคชันที่อยู่ใน dom0 หรือ domU ตามสิทธิ์ของ Provider และ User
 - **Kernel Level** → ระดับระบบปฏิบัติการ (OS) สำหรับ dom0 และ domU
