@@ -201,6 +201,7 @@ Hybrid Cloud คือการรวมข้อดีของ **Private Cloud
 
 ## **4.4 สรุป**
 การประมวลผลแบบกลุ่มเมฆแบ่งตามเขตการจัดการได้ 4 แบบ:
+
 ✔ Private  
 ✔ Public  
 ✔ Community  
