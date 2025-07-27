@@ -166,3 +166,56 @@ Hybrid Cloud คือการรวมข้อดีของ **Private Cloud
 <sub>[⬆ Home](#สารบัญ)</sub>
 
 ---
+## **4.3 การประมวลผลแบบกลุ่มเมฆในมุมมองจากมิติต่างๆ**
+แนวคิดการวิเคราะห์ Cloud แบ่งเป็น 4 มิติหลัก:
+
+1. **Control / Governance**  
+   - Private Cloud → ควบคุมมากที่สุด  
+   - Public Cloud → ควบคุมน้อยที่สุด
+   - Hybrid Cloud → ควบคุมได้ปลานกลาง
+
+2. **Economies of Scale**  
+   - Public Cloud → คุ้มค่าที่สุด  
+
+3. **Level of Abstraction**  
+   - IaaS → ระดับต่ำสุด  
+   - SaaS → ระดับสูงสุด  
+
+4. **Flexibility of Purpose**  
+   - SaaS → จำกัดตามแอปที่ให้บริการ  
+   - IaaS → ยืดหยุ่นที่สุด รองรับการปรับแต่งมากที่สุด  
+
+![มุมมอง Cloud Deployment](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure4.2.png)  
+*รูปที่ 4.2 มุมมองของ Service Models ในแต่ละมิติ*
+
+<sub>[⬆ Home](#สารบัญ)</sub>
+
+---
+
+## **4.4 สรุป**
+การประมวลผลแบบกลุ่มเมฆแบ่งตามเขตการจัดการได้ 4 แบบ:
+✔ Private  
+✔ Public  
+✔ Community  
+✔ Hybrid  
+
+และทุก Service Model (SaaS, PaaS, IaaS) สามารถอยู่บน Deployment Models เหล่านี้ได้ทั้งหมด
+
+<sub>[⬆ Home](#สารบัญ)</sub>
+
+---
+
+## **4.5 คำถามท้ายบท (พร้อมเฉลย ✅)**
+
+1. **จงบอกการประมวลผลแบบกลุ่มเมฆทั้ง 4 แบบ พร้อมเหตุผล**  
+✅ Private, Public, Community, Hybrid → อธิบายความแตกต่างด้านความปลอดภัยและการใช้งาน  
+
+2. **ยกตัวอย่างการใช้งานของ IaaS ใน Private, Public, Hybrid, Community Cloud**  
+✅ เช่น Private → สำหรับองค์กรใหญ่, Public → AWS EC2  
+
+3. **Community Cloud เหมาะกับองค์กรประเภทใด?**  
+✅ เหมาะสำหรับกลุ่มที่มีวัตถุประสงค์ร่วม เช่น มหาวิทยาลัย  
+
+<sub>[⬆ Home](#สารบัญ)</sub>
+
+---
