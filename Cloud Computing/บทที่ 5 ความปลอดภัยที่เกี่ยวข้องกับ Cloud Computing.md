@@ -174,14 +174,35 @@ CIA+P = **Confidentiality + Integrity + Availability + Privacy**
 ![สถาปัตยกรรม IaaS](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure5.1.png)  
 *รูปที่ 5.1 แสดงสถาปัตยกรรม IaaS และองค์ประกอบ*
 
+
 ### ✅ **คำอธิบายโครงสร้าง**
-- **dom0** → Domain 0 เป็น VM ของ Provider ทำหน้าที่ควบคุมการสร้างและจัดการ VM อื่น ๆ
-- **domU** → Domain U เป็น VM ของผู้ใช้ (Consumer) เช่น ลูกค้า 1 ใช้ domU1, ลูกค้า 2 ใช้ domU2
-- **Hypervisor** → ตัวกลางระหว่าง Hardware จริงกับ VM
-- **hw0** → Hardware จริง เช่น CPU, RAM, Disk ของ Provider
-- **diskU** → ดิสก์เสมือนที่อยู่ใน domU ใช้เก็บข้อมูลผู้ใช้
-- **consumerX's files** → ข้อมูลของลูกค้าที่ถูกเก็บใน diskU
-- **app0 / appU** → แอปพลิเคชันใน dom0 หรือ domU เช่น OS, โปรแกรมที่ผู้ใช้ติดตั้ง
+
+- **dom0** → เป็น VM ของ Provider ทำหน้าที่ควบคุมและจัดการ VM อื่น ๆ
+- **domU** → เป็น VM ของผู้ใช้ (Consumer) ที่รันบน Hardware เดียวกัน
+- **Hypervisor** → ซอฟต์แวร์ตัวกลางควบคุม VM ทั้งหมด
+- **hw0** → Hardware จริงของ Provider
+- **diskU** → ดิสก์เสมือนของ domU ที่เก็บข้อมูลลูกค้า
+- **consumerX's files** → ข้อมูลของผู้ใช้ที่เก็บใน diskU
+- **app0 / appU** → แอปพลิเคชันที่อยู่ใน dom0 หรือ domU ตามสิทธิ์ของ Provider และ User
+- **Kernel Level** → ระดับระบบปฏิบัติการ (OS) สำหรับ dom0 และ domU
+- **User Level** → พื้นที่ที่รันแอปพลิเคชันใน dom0 และ domU
+
+### ✅ **รายละเอียดเพิ่มเติมของแต่ละองค์ประกอบ**
+
+| องค์ประกอบ            | คำอธิบาย |
+|----------------------|----------|
+| **dom0**            | VM ที่ Provider ใช้ควบคุมระบบ เช่น การสร้าง/ลบ domU และจัดการ Hypervisor |
+| **domU**            | VM ของผู้ใช้ที่ Provider จัดสรรให้ สามารถรัน OS และแอปพลิเคชันได้ตามสิทธิ์ |
+| **ชั้น User Level** | พื้นที่สำหรับรันแอปพลิเคชันใน dom0 (เครื่องมือจัดการ) และ domU (แอปของผู้ใช้) |
+| **ชั้น Kernel Level**| พื้นที่ของระบบปฏิบัติการที่ควบคุม dom0 และ domU เช่น Linux Kernel |
+| **app0**            | แอปพลิเคชันที่อยู่ใน dom0 เช่น เครื่องมือสำหรับจัดการ VM |
+| **appU**            | แอปพลิเคชันที่อยู่ใน domU เช่น โปรแกรมที่ผู้ใช้ติดตั้ง (เช่น Notepad) |
+| **hw0**             | Hardware จริงของ Provider เช่น CPU, RAM, Disk |
+| **disk0**           | ดิสก์จริงที่ใช้โดย dom0 บน hw0 |
+| **diskU**           | ดิสก์เสมือนที่ถูกสร้างขึ้นสำหรับ domU เพื่อเก็บข้อมูลผู้ใช้ |
+| **consumerX's files**| ไฟล์ของผู้ใช้ที่จัดเก็บอยู่ใน diskU ภายใต้ domU |
+
+---
 
 ### ✅ **ข้อสังเกตด้านความปลอดภัย**
 - **Multi-Tenancy Risk** → ลูกค้าหลายรายใช้ Hardware เดียวกัน หาก Hypervisor ถูกโจมตี อาจเข้าถึง VM อื่นได้
