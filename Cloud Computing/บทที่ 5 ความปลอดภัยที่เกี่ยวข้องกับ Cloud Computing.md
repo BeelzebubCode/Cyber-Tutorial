@@ -183,14 +183,10 @@ CIA+P = **Confidentiality + Integrity + Availability + Privacy**
 - **consumerX's files** → ข้อมูลของลูกค้าที่ถูกเก็บใน diskU
 - **app0 / appU** → แอปพลิเคชันใน dom0 หรือ domU เช่น OS, โปรแกรมที่ผู้ใช้ติดตั้ง
 
----
-
 ### ✅ **ข้อสังเกตด้านความปลอดภัย**
 - **Multi-Tenancy Risk** → ลูกค้าหลายรายใช้ Hardware เดียวกัน หาก Hypervisor ถูกโจมตี อาจเข้าถึง VM อื่นได้
 - **VM Escape** → ผู้โจมตีอาจเจาะจาก domU ไปยัง dom0 เพื่อยึดสิทธิ์ควบคุมระบบทั้งหมด
 - **Data Breach** → ข้อมูลของลูกค้าถูกเก็บใน diskU หากไม่มีการเข้ารหัส (Encryption) เสี่ยงรั่วไหล
-
----
 
 ### ✅ **วิธีลดความเสี่ยง**
 - ใช้ **การเข้ารหัสข้อมูล (Encryption)** ในระดับ Storage
