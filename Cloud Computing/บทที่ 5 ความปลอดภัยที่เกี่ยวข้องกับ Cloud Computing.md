@@ -248,6 +248,7 @@ CIA+P = **Confidentiality + Integrity + Availability + Privacy**
    หากผู้โจมตีสามารถเข้าถึง Kernel ของ domU ได้ อาจทำให้รันโค้ดที่เป็นอันตรายและยกระดับสิทธิ์การเข้าถึงไปยัง dom0
 4. **ความเสี่ยงด้าน API (Application Programming Interface)**
    API ที่ให้บริการจัดการ VM อาจถูกเจาะช่องโหว่และใช้ยึดระบบทั้งหมด
+   
    API ที่แสดงในรูป 5.1 "- - -"
 
 ---
