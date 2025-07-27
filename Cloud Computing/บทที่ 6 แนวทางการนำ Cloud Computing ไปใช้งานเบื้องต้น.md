@@ -14,7 +14,6 @@
 ---
 
 # **6.1 Microsoft Azure**
-
 ---
 ## **6.1.1 Microsoft Azure คืออะไร**
 
