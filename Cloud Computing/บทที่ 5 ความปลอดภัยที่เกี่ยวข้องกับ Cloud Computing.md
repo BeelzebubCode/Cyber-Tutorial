@@ -463,5 +463,6 @@ Cloud ใช้ API และ Web Interface สำหรับจัดการ
 ---
 
 ✅ ครอบคลุมทั้ง **CIA+P**, Multi-Tenancy Risk, Application Security และ Physical Security
+
 <sub>[⬆ Home](#สารบัญ)</sub>
 
