@@ -172,20 +172,27 @@ Hybrid Cloud คือการรวมข้อดีของ **Private Cloud
 *รูปที่ 4.2 มุมมองของ Service Models ในแต่ละมิติ*
 
 แนวคิดการวิเคราะห์ Cloud แบ่งเป็น 4 มิติหลัก:
-1. **Control / Governance**  
-   - Private Cloud → ควบคุมมากที่สุด  
+1. **Control / Governance**
+   คือ ระดับการควบคุมทรัพยากรทาง computer
    - Public Cloud → ควบคุมน้อยที่สุด
-   - Hybrid Cloud → ควบคุมได้ปลานกลาง
+   - Hybrid Cloud → ควบคุมได้ปานกลาง
+   - Private Cloud → ควบคุมมากที่สุด  
 
-2. **Economies of Scale**  
-   - Public Cloud → คุ้มค่าที่สุด  
+3. **Economies of Scale**
+   คือ ระดับความนิยม
+   - Private Cloud → นิยมน้อยสุด
+   - Hybrid Cloud → นิยมปานกลาง
+   - Public Cloud → นิยมมากที่สุด
 
-3. **Level of Abstraction**  
-   - IaaS → ระดับต่ำสุด  
+5. **Level of Abstraction**
+   คือ ระดับความซับซ้อน 
+   - IaaS → ระดับต่ำสุด
+   - Paas → ระดับปานกลาง
    - SaaS → ระดับสูงสุด  
 
-4. **Flexibility of Purpose**  
-   - SaaS → จำกัดตามแอปที่ให้บริการ  
+6. **Flexibility of Purpose**  
+   - SaaS → จำกัดตามแอปที่ให้บริการ ใช่งานได้งานเดียวเช่น Google docs
+   - PaaS → ระดับการใช้งานตามวัตถุประสงค์ปานกลาง
    - IaaS → ยืดหยุ่นที่สุด รองรับการปรับแต่งมากที่สุด  
 
 <sub>[⬆ Home](#สารบัญ)</sub>
