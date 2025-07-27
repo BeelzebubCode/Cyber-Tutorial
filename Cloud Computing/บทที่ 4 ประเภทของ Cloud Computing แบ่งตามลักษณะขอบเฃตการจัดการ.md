@@ -169,6 +169,9 @@ Hybrid Cloud คือการรวมข้อดีของ **Private Cloud
 ## **4.3 การประมวลผลแบบกลุ่มเมฆในมุมมองจากมิติต่างๆ**
 แนวคิดการวิเคราะห์ Cloud แบ่งเป็น 4 มิติหลัก:
 
+![มุมมอง Cloud Deployment](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure4.2.png)  
+*รูปที่ 4.2 มุมมองของ Service Models ในแต่ละมิติ*
+
 1. **Control / Governance**  
    - Private Cloud → ควบคุมมากที่สุด  
    - Public Cloud → ควบคุมน้อยที่สุด
@@ -184,9 +187,6 @@ Hybrid Cloud คือการรวมข้อดีของ **Private Cloud
 4. **Flexibility of Purpose**  
    - SaaS → จำกัดตามแอปที่ให้บริการ  
    - IaaS → ยืดหยุ่นที่สุด รองรับการปรับแต่งมากที่สุด  
-
-![มุมมอง Cloud Deployment](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure4.2.png)  
-*รูปที่ 4.2 มุมมองของ Service Models ในแต่ละมิติ*
 
 <sub>[⬆ Home](#สารบัญ)</sub>
 
