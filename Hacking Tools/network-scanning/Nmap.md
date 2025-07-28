@@ -86,7 +86,7 @@ nmap -sS -p- -sV -O -T4 -Pn <IP>
 | `-p 22,80,443` | สแกนเฉพาะพอร์ตที่ระบุ |
 | `-F` | สแกนพอร์ตยอดนิยม (100 พอร์ตแรก) |
 
-📌 [ดูรายละเอียดพอร์ตที่สำคัญ →](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Networking/Ports-Overview.md#tcp-และ-udp)
+📌 [ดูรายละเอียดพอร์ตที่สำคัญ →](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Networking/Ports-Overview.md)
 
 
 ### 🔍 Service Detection
