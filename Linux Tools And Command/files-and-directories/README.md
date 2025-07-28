@@ -10,9 +10,13 @@
 |------|-------------|
 | `linux-directory-structure.md` | อธิบายโครงสร้างไดเรกทอรีพื้นฐานของ Linux เช่น `/bin`, `/etc`, `/home`, `/var`, และหน้าที่ของแต่ละโฟลเดอร์ |
 | `listing-files-ls.md` | การใช้คำสั่ง `ls` เพื่อแสดงรายชื่อไฟล์ พร้อมคำอธิบาย options ต่าง ๆ เช่น `-l`, `-a`, `-h` และการตีความผลลัพธ์ |
-| `working-with-directories.md` | การสร้าง ย้าย ลบ และเปลี่ยนชื่อไดเรกทอรีด้วยคำสั่งเช่น `mkdir`, `cd`, `rmdir`, `mv` |
+| `navigating-and-managing-directories.md` | คำสั่งสำหรับสำรวจและจัดการไดเรกทอรี เช่น `pwd`, `cd`, `mkdir`, `mv`, `rmdir` |
 | `file-permissions.md` | อธิบายระบบ permission ใน Linux ทั้งแบบ symbolic (`rwx`) และ numeric (`755`) และผลกระทบจากการตั้งค่าต่าง ๆ |
 | `umask.md` | อธิบายการใช้ `umask` เพื่อกำหนด default permission สำหรับไฟล์และไดเรกทอรีใหม่ |
+| `read-and-write-files.md` | การใช้คำสั่ง `cat`, `echo`, `>`, `>>` เพื่อดูและเขียนไฟล์แบบพื้นฐาน |
+| `user-basics.md` | คำสั่งเกี่ยวกับผู้ใช้งาน เช่น `whoami` สำหรับตรวจสอบตัวตนในระบบ |
+| `shell-operators.md` | รวมคำสั่งควบคุม flow เช่น `|`, `&&`, `&` ใช้เชื่อมคำสั่งและรันแบบมีเงื่อนไข |
+| `searching.md` | คำสั่งค้นหาไฟล์และข้อความ เช่น `find`, `grep` |
 
 ---
 
@@ -21,10 +25,14 @@
 ขอแนะนำลำดับการเรียนรู้สำหรับผู้เริ่มต้น:
 
 1. `linux-directory-structure.md` → ทำความเข้าใจภาพรวมว่าไฟล์และโฟลเดอร์ในระบบ Linux อยู่ตรงไหน มีหน้าที่อย่างไร
-2. `working-with-directories.md` → ฝึกคำสั่งพื้นฐานในการย้ายเข้าออกโฟลเดอร์ สร้าง/ลบไดเรกทอรี
+2. `navigating-and-managing-directories.md` → ฝึกคำสั่งพื้นฐานในการย้ายเข้าออกโฟลเดอร์ สร้าง/ลบไดเรกทอรี
 3. `listing-files-ls.md` → เรียนรู้วิธีดูรายชื่อไฟล์และวิเคราะห์ output ด้วย `ls`
-4. `file-permissions.md` → เข้าใจโครงสร้าง permission และการจัดการสิทธิ์ของไฟล์และโฟลเดอร์
-5. `umask.md` → เจาะลึกการตั้งค่า default permissions เมื่อลงไฟล์หรือไดเรกทอรีใหม่
+4. `read-and-write-files.md` → ดูและเขียนไฟล์ด้วย `cat`, `echo`, และ redirect
+5. `searching.md` → ฝึกค้นหาไฟล์และข้อความในระบบ
+6. `shell-operators.md` → ควบคุมการไหลของคำสั่งด้วย pipe และ logical operators
+7. `user-basics.md` → ตรวจสอบผู้ใช้ และพื้นฐานคำสั่งผู้ใช้
+8. `file-permissions.md` → เข้าใจโครงสร้าง permission และการจัดการสิทธิ์ของไฟล์และโฟลเดอร์
+9. `umask.md` → เจาะลึกการตั้งค่า default permissions เมื่อลงไฟล์หรือไดเรกทอรีใหม่
 
 ---
 
