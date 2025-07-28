@@ -15,7 +15,7 @@
 | `umask.md` | อธิบายการใช้ `umask` เพื่อกำหนด default permission สำหรับไฟล์และไดเรกทอรีใหม่ |
 | `read-and-write-files.md` | การใช้คำสั่ง `cat`, `echo`, `>`, `>>` เพื่อดูและเขียนไฟล์แบบพื้นฐาน |
 | `user-basics.md` | คำสั่งเกี่ยวกับผู้ใช้งาน เช่น `whoami` สำหรับตรวจสอบตัวตนในระบบ |
-| `shell-operators.md` | รวมคำสั่งควบคุม flow เช่น <code>|</code>, <code>&&</code>, <code>&</code> ใช้เชื่อมคำสั่งและรันแบบมีเงื่อนไข |
+| `shell-operators.md` | รวมคำสั่งควบคุม flow เช่น <code>`|`</code>, <code>&&</code>, <code>&</code> ใช้เชื่อมคำสั่งและรันแบบมีเงื่อนไข |
 | `searching.md` | คำสั่งค้นหาไฟล์และข้อความ เช่น `find`, `grep` |
 
 ---
