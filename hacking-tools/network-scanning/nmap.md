@@ -23,7 +23,7 @@
   - [📄 การบันทึกผลลัพธ์](#-การบันทึกผลลัพธ์)
 
 ### 🧠 ระดับกลางถึงสูง
-- [🕵️‍♂️ Spoofing & Evasion with Nmap](#-Spoofing-&-Evasion-with-Nmap)
+- [🕵️‍♂️ Spoofing & Evasion with Nmap](#-spoofing-&-evasion-with-nmap)
 - [🧟 Zombie Scan (Idle Scan)](#-zombie-scan-idle-scan)
 - [🎭 Firewall Evasion Techniques](#-firewall-evasion-techniques)
 - [🧪 NSE Script Deep Dive](#-nse-script-deep-dive)
