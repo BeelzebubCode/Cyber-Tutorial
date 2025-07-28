@@ -137,6 +137,12 @@ Microsoft Azure คือบริการคลาวด์ที่:
 
 ---
 
+![มุมมอง Cloud Deployment](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure6.1.png)  
+*รูปที่ 6.1 mobile-Cloud Computing*
+
+![มุมมอง Cloud Deployment](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure6.2.png)  
+*รูปที่ 6.2 อุปกรณ์พกพามีการแจ้งให้ผู้ใช้ที่เป็นคนตาบอดทราบว่าควรข้ามถนนหรือรอ*
+
 ### ✅ **ตัวอย่างการใช้งานจากงานวิจัย (จากรูปที่ 6.1 และ 6.2)**
 
 นักวิจัยใน [44] ได้พัฒนาแอปพลิเคชันเพื่อช่วย **ผู้พิการทางสายตา (คนตาบอด)** ในการเดินทาง โดยประยุกต์ใช้ระบบดังนี้:
