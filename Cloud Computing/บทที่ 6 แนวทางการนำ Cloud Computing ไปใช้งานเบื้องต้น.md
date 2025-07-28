@@ -538,3 +538,54 @@ Things และ การประมวลผลแบบกลุ่มเม
 <sub>[⬆ Home](#สารบัญ)</sub>
 
 ---
+
+## **6.5 การสร้างการประมวลผลแบบกลุ่มเมฆ**
+
+หัวข้อนี้กล่าวถึงแนวทางการสร้าง **Cloud Computing** ทั้งแบบ **Private Cloud** และ **Public Cloud** โดยมีองค์ประกอบสำคัญคือ **Hypervisor** ซึ่งเป็นซอฟต์แวร์ที่ช่วยให้เราสามารถรันหลายระบบปฏิบัติการบนเครื่องเดียวได้
+
+---
+
+## **6.5.1 ไฮเปอร์ไวเซอร์ (Hypervisor)**
+
+**Hypervisor** หรือเรียกว่า **Virtual Machine Manager (VMM)**  
+คือซอฟต์แวร์ที่ติดตั้งบนเครื่องแม่ข่าย (Host) เพื่อสร้างและจัดการเครื่องเสมือน (VM) โดยสามารถสั่งการให้ Guest OS เข้าถึง CPU, RAM, Storage, Network เสมือน
+
+![แสดงโครงสร้าง Hypervisor และการจัดสรรทรัพยากร](sandbox:/mnt/data/hypervisor_1.png)  
+*รูปที่ 6.5 โครงสร้าง Hypervisor ระหว่าง Host และ Guest*
+
+---
+
+## **ชนิดของ Hypervisor**
+
+### 1. **Bare Metal Hypervisor**  
+- ติดตั้งลงบน Hardware โดยตรง ไม่มี OS กลาง  
+- เข้าถึงทรัพยากรได้เร็ว มีประสิทธิภาพสูง  
+- นิยมใช้ในระบบ **เซิร์ฟเวอร์ระดับองค์กร**  
+- ตัวอย่าง: `VMware ESXi`, `Citrix XenServer`, `Microsoft Hyper-V`
+
+![Bare Metal Hypervisor](sandbox:/mnt/data/hypervisor_2.png)  
+*รูปที่ 6.6 ตัวอย่างการทำงานของ Bare Metal Hypervisor*
+
+---
+
+### 2. **Hosted Hypervisor**  
+- ทำงานภายใต้ระบบปฏิบัติการเดิมของ Host  
+- เข้าถึง Hardware ผ่าน OS ของ Host → ทำให้ช้ากว่าแบบแรก  
+- เหมาะสำหรับผู้ใช้ทั่วไปที่ต้องการทดลองระบบหลาย OS  
+- ตัวอย่าง: `VirtualBox`, `VMware Workstation`, `Microsoft VirtualPC`
+
+![Hosted Hypervisor](sandbox:/mnt/data/hypervisor_3.png)  
+*รูปที่ 6.7 ตัวอย่างการทำงานของ Hosted Hypervisor*
+
+---
+
+## ✅ **สรุปเปรียบเทียบ Hypervisor ทั้ง 2 ประเภท**
+
+| ประเภท Hypervisor | ติดตั้ง | ความเร็ว | เหมาะสำหรับ |
+|-------------------|--------|-----------|----------------|
+| **Bare Metal** | บน Hardware | สูงมาก | องค์กร, Server |
+| **Hosted** | บน Host OS | ปานกลาง | ผู้ใช้ทั่วไป, ทดลอง |
+
+<sub>[⬆ กลับไปสารบัญ](#สารบัญ)</sub>
+
+---
