@@ -40,7 +40,7 @@ shodan init <API_KEY>
 shodan search "product:Apache country:TH" --limit 10
 ```
 
-หรือเข้าเว็บ: <a href="https://www.shodan.io" target="_blank">Shodan.io 🌐</a>
+หรือเข้าเว็บ: [Shodan.io 🌐](https://www.shodan.io)
 
 ---
 
