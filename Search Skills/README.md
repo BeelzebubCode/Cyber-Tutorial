@@ -13,6 +13,7 @@
 | `censys.md` | ค้นหา host, domain, SSL cert, และพอร์ตอินเทอร์เน็ตทั่วโลก พร้อม query ภาษา SQL-like สำหรับ asset discovery |
 | `virustotal.md` | ตรวจสอบไฟล์, URL และ hash ว่าเป็นมัลแวร์หรือไม่ โดยใช้ engine จากหลาย antivirus พร้อมข้อมูลเชิงลึก |
 | `haveibeenpwned.md` | ตรวจสอบว่าอีเมล/โดเมนของคุณเคยปรากฏอยู่ในฐานข้อมูลที่รั่วไหลหรือไม่ พร้อมแนวทางการป้องกัน |
+| `cve-and-exploit.md` | อธิบายระบบ CVE (ช่องโหว่) และการค้นหา exploit code จากแหล่งต่าง ๆ เช่น Exploit-DB และ GitHub เพื่อการทดสอบระบบ|
 
 ---
 
@@ -23,6 +24,7 @@
 3. `censys.md` → ค้นหา asset, host, certificate และใช้ query filter ขั้นสูง
 4. `virustotal.md` → ตรวจสอบไฟล์ต้องสงสัยหรือ IOC ต่าง ๆ
 5. `haveibeenpwned.md` → เช็กว่าอีเมล/รหัสผ่านเคยรั่วไหลหรือไม่
+6. `cve-and-exploit.md` → ทำความเข้าใจระบบช่องโหว่ (CVE) และวิธีหาข้อมูล exploit เพื่อทดสอบระบบอย่างมีจริยธรรม
 
 ---
 
