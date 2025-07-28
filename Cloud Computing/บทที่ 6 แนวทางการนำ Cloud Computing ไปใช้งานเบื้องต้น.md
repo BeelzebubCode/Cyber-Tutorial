@@ -220,7 +220,7 @@ Microsoft Azure คือบริการคลาวด์ที่:
 #### 1. **Scoot Networks App**
 | รายการ | รายละเอียด |
 |--------|-------------|
-| แพลตฟอร์ม | <a href="https://scootnetworksapp.herokuapp.com/#map" target="blank">Heroku</a> |
+| แพลตฟอร์ม | <a href="https://scootnetworksapp.herokuapp.com/#map" target="_blank">Heroku</a> |
 | ลักษณะบริการ | เว็บแอปแสดงตำแหน่งรถสกูตเตอร์ในเมือง |
 | เทคโนโลยี | พัฒนาโดยใช้ Ruby และ JavaScript |
 | ฟีเจอร์ | ติดตามพิกัด, ความเร็ว, แบตเตอรี่แบบ Real-Time |
