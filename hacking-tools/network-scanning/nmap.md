@@ -19,7 +19,7 @@
   - [🌐 Target & Port](#target--port)
   - [🔍 Service Detection](#service-detection)
   - [🧠 OS Detection](#os-detection)
-  - [🚀 Speed & Timing (-T)](#speed--timing--t)
+  - [🚀 Speed & Timing (-T)](#speed--timing-t)
   - [📄 การบันทึกผลลัพธ์](#การบันทึกผลลัพธ์)
 
 ### 🧠 ระดับกลางถึงสูง
