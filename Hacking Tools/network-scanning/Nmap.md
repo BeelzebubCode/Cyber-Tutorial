@@ -246,7 +246,7 @@ PORT   STATE SERVICE
 | `--ttl <val>` | ปรับค่า TTL (Time To Live) เช่น 1–255 → ใช้หลบ routing path หรือ signature IDS ที่ filter ตาม TTL ที่ใช้บ่อย |
 | `--source-port <port>` | กำหนดพอร์ตต้นทางของ packet เช่น 53 (DNS), 123 (NTP), 443 (HTTPS) เพื่อหลอก firewall ให้คิดว่ามาจาก traffic ปกติ |
 | `-D RND:10` | สร้าง IP ปลอม 10 IP โดยสุ่ม (random) เป็น decoy → ช่วยกลบ IP ผู้โจมตีจริง |
-| `--spoof-mac <mac|0>` | ปลอม MAC address → ใส่ `0` เพื่อให้สุ่มอัตโนมัติ เช่น `--spoof-mac 0`, หรือกำหนดแบบ `00:11:22:33:44:55` |
+| `--spoof-mac <mac/0>` | ปลอม MAC address → ใส่ `0` เพื่อให้สุ่มอัตโนมัติ เช่น `--spoof-mac 0`, หรือกำหนดแบบ `00:11:22:33:44:55` |
 | `--badsum` | ส่ง packet ที่มี checksum ผิดจงใจ → IDS บางตัวตอบกลับโดยไม่ตรวจ checksum ทำให้หลอกได้ว่าเปิดพอร์ต |
 | `--randomize-hosts` | สุ่มลำดับของ IP ที่สแกน → ป้องกัน IDS ตรวจจับ pattern เช่นเรียง IP ทีละตัว |
 | `--scan-delay <t>` | กำหนดเวลาหน่วงระหว่าง probe → เช่น `--scan-delay 100ms` หรือ `--scan-delay 1s` เพื่อลด rate ให้ stealth มากขึ้น |
