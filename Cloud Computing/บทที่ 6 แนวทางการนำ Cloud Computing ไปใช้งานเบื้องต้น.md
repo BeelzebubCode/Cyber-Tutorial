@@ -550,7 +550,7 @@ Things และ การประมวลผลแบบกลุ่มเม
 **Hypervisor** หรือเรียกว่า **Virtual Machine Manager (VMM)**  
 คือซอฟต์แวร์ที่ติดตั้งบนเครื่องแม่ข่าย (Host) เพื่อสร้างและจัดการเครื่องเสมือน (VM) โดยสามารถสั่งการให้ Guest OS เข้าถึง CPU, RAM, Storage, Network เสมือน
 
-![แสดงโครงสร้าง Hypervisor และการจัดสรรทรัพยากร](sandbox:/mnt/data/hypervisor_1.png)  
+![แสดงโครงสร้าง Hypervisor และการจัดสรรทรัพยากร](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure6.5.png)  
 *รูปที่ 6.5 โครงสร้าง Hypervisor ระหว่าง Host และ Guest*
 
 ---
@@ -563,7 +563,7 @@ Things และ การประมวลผลแบบกลุ่มเม
 - นิยมใช้ในระบบ **เซิร์ฟเวอร์ระดับองค์กร**  
 - ตัวอย่าง: `VMware ESXi`, `Citrix XenServer`, `Microsoft Hyper-V`
 
-![Bare Metal Hypervisor](sandbox:/mnt/data/hypervisor_2.png)  
+![Bare Metal Hypervisor](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure6.6.png)  
 *รูปที่ 6.6 ตัวอย่างการทำงานของ Bare Metal Hypervisor*
 
 ---
@@ -574,7 +574,7 @@ Things และ การประมวลผลแบบกลุ่มเม
 - เหมาะสำหรับผู้ใช้ทั่วไปที่ต้องการทดลองระบบหลาย OS  
 - ตัวอย่าง: `VirtualBox`, `VMware Workstation`, `Microsoft VirtualPC`
 
-![Hosted Hypervisor](sandbox:/mnt/data/hypervisor_3.png)  
+![Hosted Hypervisor](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure6.7.png)  
 *รูปที่ 6.7 ตัวอย่างการทำงานของ Hosted Hypervisor*
 
 ---
