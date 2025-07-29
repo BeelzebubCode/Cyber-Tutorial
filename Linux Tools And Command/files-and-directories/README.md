@@ -11,10 +11,7 @@
 | `linux-directory-structure.md` | อธิบายโครงสร้างไดเรกทอรีพื้นฐานของ Linux เช่น `/bin`, `/etc`, `/home`, `/var`, และหน้าที่ของแต่ละโฟลเดอร์ |
 | `listing-files-ls.md` | การใช้คำสั่ง `ls` เพื่อแสดงรายชื่อไฟล์ พร้อมคำอธิบาย options ต่าง ๆ เช่น `-l`, `-a`, `-h` และการตีความผลลัพธ์ |
 | `navigating-and-managing-directories.md` | คำสั่งสำหรับสำรวจและจัดการไดเรกทอรี เช่น `pwd`, `cd`, `mkdir`, `mv`, `rmdir` |
-| `file-permissions.md` | อธิบายระบบ permission ใน Linux ทั้งแบบ symbolic (`rwx`) และ numeric (`755`) และผลกระทบจากการตั้งค่าต่าง ๆ |
-| `umask.md` | อธิบายการใช้ `umask` เพื่อกำหนด default permission สำหรับไฟล์และไดเรกทอรีใหม่ |
 | `read-and-write-files.md` | การใช้คำสั่ง `cat`, `echo`, `>`, `>>` เพื่อดูและเขียนไฟล์แบบพื้นฐาน |
-| `user-basics.md` | คำสั่งเกี่ยวกับผู้ใช้งาน เช่น `whoami` สำหรับตรวจสอบตัวตนในระบบ |
 | `shell-operators.md` | รวมคำสั่งควบคุม flow เช่น `\|`, `&&`, `&` ใช้เชื่อมคำสั่งและรันแบบมีเงื่อนไข |
 | `searching.md` | คำสั่งค้นหาไฟล์และข้อความ เช่น `find`, `grep` |
 
