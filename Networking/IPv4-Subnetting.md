@@ -225,3 +225,4 @@ Section:   Network  Network    Subnet Host   Host
 ## 🔗 แหล่งอ้างอิง
 - [RFC 950 – Internet Standard Subnetting Procedure](https://datatracker.ietf.org/doc/html/rfc950)
 - [StationX Cheat Sheet](https://www.stationx.net/category/cheat-sheets/)
+- 🌐 [CCNAX Subnetting Quiz (ฝึกทำโจทย์)](https://ccnax.com/free-quiz/)
