@@ -9,7 +9,7 @@
 | ไฟล์ | รายละเอียด |
 |------|-------------|
 | `user-management.md` | คำสั่งพื้นฐานเกี่ยวกับผู้ใช้งาน เช่น `whoami`, `id`, `groups`, `passwd`, `su`, `sudo` เพื่อดูข้อมูลผู้ใช้และจัดการสิทธิ์เบื้องต้น |
-| `permission-tools.md` | การใช้ `chmod`, `chown`, `chgrp` เพื่อกำหนดสิทธิ์ไฟล์และการเปลี่ยนเจ้าของไฟล์ |
+| `file-permission-tools.md` | การใช้ `chmod`, `chown`, `chgrp` เพื่อกำหนดสิทธิ์ไฟล์และการเปลี่ยนเจ้าของไฟล์ |
 | `group-management.md` | การจัดการกลุ่ม เช่น `groupadd`, `groupmod`, `groupdel` เพื่อควบคุมสิทธิ์ระดับกลุ่ม |
 | `sudoers-and-policy.md` | การจัดการไฟล์ `sudoers` และการใช้ `visudo`, `sudo -l` เพื่อควบคุมสิทธิ์การใช้งานของผู้ใช้ |
 | `acl-permissions.md` | การกำหนดสิทธิ์แบบ ACL ด้วย `getfacl`, `setfacl` สำหรับควบคุมสิทธิ์ระดับไฟล์แบบละเอียด |
