@@ -13,6 +13,7 @@
 | `group-management.md` | การจัดการกลุ่ม เช่น `groupadd`, `groupmod`, `groupdel` เพื่อควบคุมสิทธิ์ระดับกลุ่ม |
 | `sudoers-and-policy.md` | การจัดการไฟล์ `sudoers` และการใช้ `visudo`, `sudo -l` เพื่อควบคุมสิทธิ์การใช้งานของผู้ใช้ |
 | `acl-permissions.md` | การกำหนดสิทธิ์แบบ ACL ด้วย `getfacl`, `setfacl` สำหรับควบคุมสิทธิ์ระดับไฟล์แบบละเอียด |
+| `umask.md` | อธิบายการทำงานของ `umask` และการตั้งค่า default permission สำหรับไฟล์และโฟลเดอร์ใหม่ |
 
 ---
 
@@ -20,9 +21,10 @@
 
 1. `user-management.md` → ทำความเข้าใจคำสั่งดูข้อมูลตัวเอง กลุ่ม และการเปลี่ยนสิทธิ์ผู้ใช้งาน
 2. `permission-tools.md` → เข้าใจวิธีการจัดการสิทธิ์และเจ้าของไฟล์ในระบบ
-3. `group-management.md` → เรียนรู้การจัดการกลุ่มผู้ใช้งาน
-4. `sudoers-and-policy.md` → ศึกษาการควบคุมสิทธิ์ผ่านไฟล์ `sudoers`
-5. `acl-permissions.md` → ใช้ ACL เพื่อควบคุมสิทธิ์ระดับไฟล์อย่างละเอียด
+3. `umask.md` → เรียนรู้ระบบ default permission และการกำหนดค่าด้วย `umask`
+4. `group-management.md` → เรียนรู้การจัดการกลุ่มผู้ใช้งาน
+5. `sudoers-and-policy.md` → ศึกษาการควบคุมสิทธิ์ผ่านไฟล์ `sudoers`
+6. `acl-permissions.md` → ใช้ ACL เพื่อควบคุมสิทธิ์ระดับไฟล์อย่างละเอียด
 
 ---
 
