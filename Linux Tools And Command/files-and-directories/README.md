@@ -27,9 +27,6 @@
 4. `read-and-write-files.md` → ดูและเขียนไฟล์ด้วย `cat`, `echo`, และ redirect
 5. `searching.md` → ฝึกค้นหาไฟล์และข้อความในระบบ
 6. `shell-operators.md` → ควบคุมการไหลของคำสั่งด้วย pipe และ logical operators
-7. `user-basics.md` → ตรวจสอบผู้ใช้ และพื้นฐานคำสั่งผู้ใช้
-8. `file-permissions.md` → เข้าใจโครงสร้าง permission และการจัดการสิทธิ์ของไฟล์และโฟลเดอร์
-9. `umask.md` → เจาะลึกการตั้งค่า default permissions เมื่อลงไฟล์หรือไดเรกทอรีใหม่
 
 ---
 
