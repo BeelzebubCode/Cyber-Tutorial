@@ -31,11 +31,42 @@ Mask Binary:  11111111.11111111.11111111.00000000
 ```
 
 ### แยกส่วน Network กับ Host
-<pre>
-<span style="color:blue">11000000.10101000.00000001</span>.<span style="color:red">00001010</span>
-= <span style="color:blue">192.168.1</span>.<span style="color:red">10</span>
-</pre>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>IPv4 Address Network & Host</title>
+</head>
+<body>
+  <h2>📊 โครงสร้าง IP Address</h2>
+  <p>IPv4 = 32 บิต → แบ่งเป็น 4 Octet (แต่ละ Octet = 8 บิต)</p>
 
+  <h3>ตัวอย่าง: <code>192.168.1.10/24</code></h3>
+  <p><b>IP Address:</b> 192.168.1.10</p>
+  <p><b>Subnet Mask:</b> /24 = 255.255.255.0</p>
+
+  <h3>แสดง Binary พร้อมสี</h3>
+  <pre style="font-size: 16px;">
+<span style="color:blue; font-weight:bold">11000000.10101000.00000001</span>.<span style="color:red; font-weight:bold">00001010</span>
+= <span style="color:blue; font-weight:bold">192.168.1</span>.<span style="color:red; font-weight:bold">10</span>
+  </pre>
+
+  <ul>
+    <li><span style="color:blue; font-weight:bold">🔵 Network Portion</span>: 24 บิตแรก → <code>192.168.1</code></li>
+    <li><span style="color:red; font-weight:bold">🔴 Host Portion</span>: 8 บิตสุดท้าย → <code>.10</code></li>
+  </ul>
+
+  <h4>สรุป:</h4>
+  <ul>
+    <li><code>/24</code> → 24 บิตแรกเป็น Network → 3 Octet แรก</li>
+    <li>8 บิตสุดท้าย → Host</li>
+  </ul>
+
+  <blockquote>
+    ✅ ยิ่ง prefix มาก เช่น <code>/26</code>, <code>/28</code> → Network เยอะขึ้น, Host ลดลง
+  </blockquote>
+</body>
+</html>
 
 - 🔵 **Network Portion** = บอกว่า IP นี้อยู่ในเครือข่ายอะไร (ในที่นี้คือ 192.168.1.0/24)
 - 🔴 **Host Portion** = บอกว่าเครื่องหมายเลขอะไรในเครือข่ายนั้น (คือหมายเลข .10)
