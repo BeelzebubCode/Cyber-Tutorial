@@ -29,8 +29,8 @@
 
 | คำสั่ง | ความหมาย |
 |--------|-----------|
-| `cat file.txt | grep error` | ค้นหาคำว่า "error" ในไฟล์ |
-| `echo "123" | tee file.txt` | เขียนและแสดงผลพร้อมกัน |
+| <code>cat file.txt \| grep error</code> | ค้นหาคำว่า "error" ในไฟล์ |
+| <code>echo "123" \| tee file.txt</code> | เขียนและแสดงผลพร้อมกัน |
 
 ---
 
