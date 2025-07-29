@@ -88,6 +88,25 @@ Host Bits (8 บิตสุดท้าย):
   - First Usable IP: Network Address + 1
   - Last Usable IP: Broadcast Address - 1
 
+## 🔍 อธิบายเพิ่มเติม: Usable Hosts
+
+ในแต่ละ Subnet จะมี IP ทั้งหมด `2^h` ค่า (h = จำนวนบิตของ Host) แต่มี 2 IP ที่ไม่สามารถนำมาใช้งานได้:
+
+1. **Network Address** → ค่าแรกของ Subnet (Host bits = 0)
+2. **Broadcast Address** → ค่าสุดท้ายของ Subnet (Host bits = 1)
+
+### 🔹 ดังนั้น:
+- **Usable Hosts** = IP ที่ใช้ได้จริง = IP ระหว่าง Network และ Broadcast
+- คำนวณโดย: `2^h - 2`
+
+### 🧪 ตัวอย่าง:
+- `/26` → มี 6 บิต Host → `2^6 = 64 IP`
+- Network Address = .0
+- Broadcast Address = .63
+- **Usable IP** = .1 ถึง .62 → รวมทั้งหมด 62 IP
+
+> ✅ ใช้สูตร Usable Hosts = `2^h - 2` เพื่อหาจำนวน IP ที่ใช้ได้จริงในแต่ละ Subnet
+
 ---
 
 ## 📝 ตาราง Quick Subnet Method
