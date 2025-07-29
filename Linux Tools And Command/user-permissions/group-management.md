@@ -100,6 +100,6 @@ id alice
 
 ## 📚 ดูเพิ่มเติม
 
-- 🔗 [การเปลี่ยนกลุ่มเจ้าของไฟล์ (`chgrp`) →](permission-tools.md#chgrp)
-- 🔗 [การกำหนดสิทธิ์ไฟล์ด้วย `chmod`, `chown` →](permission-tools.md)
+- 🔗 [การเปลี่ยนกลุ่มเจ้าของไฟล์ (`chgrp`) →](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Linux%20Tools%20And%20Command/user-permissions/file-permissions-tools.md)
+- 🔗 [การกำหนดสิทธิ์ไฟล์ด้วย `chmod`, `chown` →](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Linux%20Tools%20And%20Command/user-permissions/file-permissions-tools.md)
 
