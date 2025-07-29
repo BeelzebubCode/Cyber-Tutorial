@@ -85,6 +85,8 @@ Host Bits (8 บิตสุดท้าย):
   - Network Address: Host bits = 0
   - Broadcast Address: Host bits = 1
   - Usable Hosts: ระหว่าง Network และ Broadcast
+  - First Usable IP: Network Address + 1
+  - Last Usable IP: Broadcast Address - 1
 
 ---
 
