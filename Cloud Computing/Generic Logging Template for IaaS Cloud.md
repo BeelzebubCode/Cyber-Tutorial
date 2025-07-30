@@ -45,8 +45,8 @@ Logging System = Logging Processes (Px) + Log Files (Fy)
 - **Provider Side**: hw → hypervisor → dom0 → domUs  
 - **Customer Side**: ผู้ใช้งานเช่า domU ผ่าน Internet
 
+![Figure 1](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure1.png)
 🖼️ *Figure 1: The IaaS architecture*  
-![Figure 1](94fc84ba-2463-46d6-935e-649fa44071a5.png)
 
 ---
 
@@ -69,8 +69,8 @@ Logging System = Logging Processes (Px) + Log Files (Fy)
 Template ประกอบด้วยตำแหน่งวาง Logging Process (Px) และ Log File (Fy)  
 เพื่อตรวจจับพฤติกรรมผิดปกติในระดับต่าง ๆ เช่น domU, dom0, hypervisor
 
+![Figure 2](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure2.png)
 🖼️ *Figure 2: Logging System Template*  
-![Figure 2](1fcdfacd-03ed-41a6-9cd0-acc93e4a4fe2.png)
 
 ## 🔍 เสริมความเข้าใจ: libVMI คืออะไร?
 
@@ -117,8 +117,8 @@ Template ประกอบด้วยตำแหน่งวาง Logging Pr
 > Fy ที่อยู่ใน diskU หรือ memU มีความเสี่ยงด้านความมั่นคงปลอดภัย  
 > Fy ใน disk0 (F3) เป็น log ถาวร แต่ควรมีมาตรการป้องกันไม่ให้ provider อ่านโดยพลการ
 
+![Figure 3](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure3.png)
 🖼️ *Figure 3: Mapping HP Flogger P2 and P3 on template*  
-![Figure 3](8e777ab6-225a-464b-8aea-1dff702245a9.png)
 
 ---
 
@@ -140,11 +140,11 @@ mail -s spamSubject winai.wongthai@ncl.ac.uk
   - ag3 = `winai.wongthai@ncl.ac.uk`
 - บันทึกลงฐานข้อมูลใน Fy = F3 (disk0)
 
+![Figure 4](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure4.png)
 🖼️ *Figure 4: Logging system เพื่อตรวจจับ spam (CSA Threat #1)*  
-![Figure 4](1cdc66ee-34ee-4958-83a5-ced47a94d645.png)
 
+![Figure 5](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure5.png)
 🖼️ *Figure 5: ตัวอย่าง output จาก Logging App (LA)*  
-![Figure 5](c6677e1a-644f-4553-bc6d-8a417ac00397.png)
 
 ### Px – Logging Process
 
