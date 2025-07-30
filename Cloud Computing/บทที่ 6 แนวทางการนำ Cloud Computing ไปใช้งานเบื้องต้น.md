@@ -631,7 +631,7 @@ Things และ การประมวลผลแบบกลุ่มเม
 2. **จัดการ dom0 ด้วย Virtual Machine Manager**  
    - ใช้เครื่องมืออย่าง **virt-manager** หรือ **xl**  
    - ตัวอย่างหน้าต่างการจัดการ dom0:  
-     ![รูปที่ 6.9 การทำงานของ dom0 และ Virtual Machine Manager](figure6.9.png)  
+     ![รูปที่ 6.9 การทำงานของ dom0 และ Virtual Machine Manager](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure6.9.png)  
 3. **ตรวจสอบสถานะ dom0**  
    - คำสั่งตัวอย่าง: `xl list` หรือ `xm list`  
    - แสดงชื่อ VM, ID, ขนาดเมมโมรี, vCPUs, สถานะ, เวลาทำงาน  
@@ -641,12 +641,12 @@ Things และ การประมวลผลแบบกลุ่มเม
      Domain-0    0   952M     8   r----- 6631.6
      webserver_01 1 1024M     1   b-----  632.0
      ```  
-   - ![รูปที่ 6.10 รายละเอียดของ dom0](figure6.10.png)
+   - ![รูปที่ 6.10 รายละเอียดของ dom0](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure6.10.png)
 
 4. **เข้าใช้งาน domU (Guest VM)**  
    - เลือก VM ที่ต้องการ แล้ว “Open” ผ่าน Virtual Machine Manager  
    - ตัวอย่างการเข้าใช้งาน `webserver_01`:  
-     ![รูปที่ 6.11 รายละเอียดของ domU](figure6.11.png)  
+     ![รูปที่ 6.11 รายละเอียดของ domU](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure6.11.png)  
    - สามารถควบคุม OS ใน domU ได้เหมือน VM ปกติ เช่น ติดตั้งแอป, ตั้งค่าเครือข่าย เป็นต้น  
 
 ### 6.5.2.4 สรุปประเด็นสำคัญ
