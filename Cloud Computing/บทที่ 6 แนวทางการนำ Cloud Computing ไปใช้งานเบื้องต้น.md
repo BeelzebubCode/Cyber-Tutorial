@@ -914,35 +914,37 @@ webserver_01    1  1024M     1   b-----   632.0
 1. **GAE เหมือนกับผลิตภัณฑ์ใดของ Microsoft เพราะเหตุใด**  
    GAE (Google App Engine) คล้ายกับ **Microsoft Azure App Services** เพราะทั้งคู่เป็น **PaaS (Platform as a Service)** ที่ช่วยให้ผู้ใช้สามารถพัฒนาและ deploy แอปพลิเคชันได้โดยไม่ต้องจัดการ infrastructure เบื้องหลัง เช่น server หรือ load balancer เอง
 
-2. **EC2 ต่างกับ GAE อย่างไรในแง่การควบคุมทรัพยากรทางคอมพิวเตอร์โดยผู้ใช้**  
+   ---
+
+3. **EC2 ต่างกับ GAE อย่างไรในแง่การควบคุมทรัพยากรทางคอมพิวเตอร์โดยผู้ใช้**  
    EC2 ให้ผู้ใช้ควบคุมได้ละเอียด เช่น กำหนดขนาดเครื่อง, OS, Network, Security Group และ Storage ได้เอง  
    ส่วน GAE ควบคุมได้น้อยกว่า มุ่งเน้นความสะดวกในการ deploy แอปพลิเคชันเท่านั้น โดยไม่ให้จัดการระบบได้โดยตรง
 
-3. **EC2 ต่างกับ GAE อย่างไรในแง่การควบคุมทรัพยากรทางคอมพิวเตอร์โดยผู้ให้บริการ**  
+4. **EC2 ต่างกับ GAE อย่างไรในแง่การควบคุมทรัพยากรทางคอมพิวเตอร์โดยผู้ให้บริการ**  
    GAE ผู้ให้บริการควบคุม Infrastructure ทั้งหมด เช่น auto-scaling, patching, monitoring อัตโนมัติ  
    ขณะที่ EC2 ผู้ให้บริการดูแลแค่ระดับ hardware และ hypervisor เท่านั้น ส่วน OS และซอฟต์แวร์เป็นหน้าที่ของผู้ใช้
 
-4. **EC2 เหมาะกับงานแบบใด**  
+5. **EC2 เหมาะกับงานแบบใด**  
    เหมาะสำหรับงานที่ต้องการควบคุมระบบปฏิบัติการ, เครือข่าย, และ resource เอง เช่น:
    - การตั้ง Web Server แบบ custom
    - การใช้งานฐานข้อมูลเฉพาะทาง
    - รัน container หรือ VM ที่ปรับแต่งเองได้
    - ระบบ backend ขนาดใหญ่และซับซ้อน
 
-5. **จงหาบริการอื่น ๆ ที่เหมือน EC2**  
+6. **จงหาบริการอื่น ๆ ที่เหมือน EC2**  
    - **Microsoft Azure Virtual Machines**
    - **Google Compute Engine (GCE)**
    - **DigitalOcean Droplets**
    - **Linode**, **Vultr**, **Oracle Cloud Infrastructure VM**
 
-6. **GAE เหมาะกับงานแบบใด**  
+7. **GAE เหมาะกับงานแบบใด**  
    เหมาะสำหรับ:
    - Web Application ที่ไม่ซับซ้อน
    - RESTful API หรือ Backend ที่ deploy อย่างรวดเร็ว
    - ระบบที่ต้องการ scaling อัตโนมัติ
    - งาน prototyping และ MVP (Minimum Viable Product)
 
-7. **ถ้าเราจะสร้าง EC2 private cloud ขึ้นใช้ในองค์กรของเราเอง ต้องทำอย่างไร**  
+8. **ถ้าเราจะสร้าง EC2 private cloud ขึ้นใช้ในองค์กรของเราเอง ต้องทำอย่างไร**  
    - เลือกใช้ **Hypervisor** เช่น Xen, KVM, VMware ESXi
    - ติดตั้งระบบบริหาร Cloud เช่น **OpenStack**, **CloudStack**, หรือ **Eucalyptus**
    - ตั้งค่า VM Template, Storage, Network, และ Security Group ให้พร้อมใช้งาน
