@@ -602,7 +602,7 @@ Things และ การประมวลผลแบบกลุ่มเม
 
 ### 6.5.2.2 สถาปัตยกรรมหลักของ Xen
 
-![รูปที่ 6.8 ส่วนประกอบที่เกี่ยวข้องกับ Xen](figure6.8.png)  
+![รูปที่ 6.8 ส่วนประกอบที่เกี่ยวข้องกับ Xen](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure6.8.png)  
 *รูปที่ 6.8 แสดงภาพรวมสถาปัตยกรรม Xen*  
 
 1. **Control Domain (dom0)**  
