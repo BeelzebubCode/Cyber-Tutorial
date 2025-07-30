@@ -74,6 +74,24 @@ Template ประกอบด้วยตำแหน่งวาง Logging Pr
 
 🖼️ *Figure 2: Logging System Template*  
 
+### 🧩 อธิบายองค์ประกอบต่าง ๆ ใน IaaS
+
+| Component | Description/Functions | Examples | Locations in IaaS environment |
+|-----------|------------------------|----------|-------------------------------|
+| **hw0**   | Physical hardware โดย provider | a PC/server | in the provider side infrastructure |
+| **disk0** | Physical disk ของ hw0 (ถูกจัดการโดย dom0) | server’s disks | physically in hw0 |
+| **mem0**  | Main memory ของ hw0 | server’s main memory | physically in hw0 |
+| **hypervisor** | รัน dom0 และ domU | Xen | on top of hw0 |
+| **dom0** | รันโดย provider (มี app0) | Fedora 16 dom0 | on top of the hypervisor |
+| **app0** | แอปของ dom0 | logging-related application | in dom0 user level |
+| **domU** | VM ของลูกค้า (มี appU, hwU) | Fedora 16 domU | on top of the hypervisor |
+| **appU** | แอปของ user ใน domU | mail command | in domU user level |
+| **hwU** | virtual hardware ของ domU | - | virtually in domU |
+| **diskU** | virtual disk ของ domU | - | virtually in hwU |
+| **memU** | virtual memory ของ domU | - | virtually in hwU |
+
+---
+
 ## 🔍 เสริมความเข้าใจ: libVMI คืออะไร?
 
 **libVMI** (Virtual Machine Introspection Library) คือเครื่องมือ open-source ที่ใช้สำหรับอ่านข้อมูลใน memory ของ VM **โดยไม่ต้องเข้าไปใน VM นั้นโดยตรง**
