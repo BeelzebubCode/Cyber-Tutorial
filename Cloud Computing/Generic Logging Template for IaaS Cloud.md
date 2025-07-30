@@ -46,6 +46,7 @@ Logging System = Logging Processes (Px) + Log Files (Fy)
 - **Customer Side**: ผู้ใช้งานเช่า domU ผ่าน Internet
 
 ![Figure 1](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure1.png)
+
 🖼️ *Figure 1: The IaaS architecture*  
 
 ---
@@ -70,6 +71,7 @@ Template ประกอบด้วยตำแหน่งวาง Logging Pr
 เพื่อตรวจจับพฤติกรรมผิดปกติในระดับต่าง ๆ เช่น domU, dom0, hypervisor
 
 ![Figure 2](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure2.png)
+
 🖼️ *Figure 2: Logging System Template*  
 
 ## 🔍 เสริมความเข้าใจ: libVMI คืออะไร?
@@ -118,6 +120,7 @@ Template ประกอบด้วยตำแหน่งวาง Logging Pr
 > Fy ใน disk0 (F3) เป็น log ถาวร แต่ควรมีมาตรการป้องกันไม่ให้ provider อ่านโดยพลการ
 
 ![Figure 3](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure3.png)
+
 🖼️ *Figure 3: Mapping HP Flogger P2 and P3 on template*  
 
 ---
@@ -141,9 +144,11 @@ mail -s spamSubject winai.wongthai@ncl.ac.uk
 - บันทึกลงฐานข้อมูลใน Fy = F3 (disk0)
 
 ![Figure 4](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure4.png)
+
 🖼️ *Figure 4: Logging system เพื่อตรวจจับ spam (CSA Threat #1)*  
 
 ![Figure 5](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure5.png)
+
 🖼️ *Figure 5: ตัวอย่าง output จาก Logging App (LA)*  
 
 ### Px – Logging Process
