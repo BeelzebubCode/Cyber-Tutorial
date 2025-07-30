@@ -8,8 +8,8 @@
 - [6.5 การสร้าง Cloud Computing](#65-การสร้าง-cloud-computing)
   - [6.5.1 ไฮเปอร์ไวเซอร์ (Hypervisor)](#651-ไฮเปอร์ไวเซอร์-hypervisor)
   - [6.5.2 การทำงานของ Xen Hypervisor](#652-การทำงานของ-xen-hypervisor)
-  - [6.5.3 การสร้าง Public Cloud เบื้องต้น](#653-การสร้าง-public-cloud-เบื้องต้น)
-  - [6.5.4 การสร้าง Private Cloud เบื้องต้น](#654-การสร้าง-private-cloud-เบื้องต้น)
+  - [6.5.3 แนวทางการสร้าง Public Cloud Computing เบื้องต้น](#653-แนวทางการสร้าง-public-cloud-computing-เบื้องต้น)
+  - [6.5.4 แนวทางการสร้าง Private Cloud Computing เบื้องต้น](#654-แนวทางการสร้าง-private-cloud-computing-เบื้องต้น)
 - [6.6 Cloud + Machine Learning](#66-cloud--machine-learning)
 - [6.7 คำถามท้ายบท](#67-คำถามท้ายบท)
 
