@@ -1,17 +1,18 @@
 # บทที่ 6: แนวทางการทำ Cloud Computing ไปใช้งานเบื้องต้น
 
-## **สารบัญ**
+## สารบัญ
 - [6.1 Microsoft Azure](#61-microsoft-azure)
-  - [6.1.1 Microsoft Azure คืออะไร](#611-microsoft-azure-คืออะไร)
-  - [6.1.2 ประเด็นเรื่องความปลอดภัยของ Microsoft Azure](#612-ประเด็นเรื่องความปลอดภัยของ-microsoft-azure)
 - [6.2 Mobile Cloud Computing](#62-mobile-cloud-computing)
-- [6.3 การประยุกต์การประมวลผลแบบกลุ่มเมฆที่ให้บริการแบบ PaaS](#63-การประยุกต์การประมวลผลแบบกลุ่มเมฆที่ให้บริการแบบ-paas)
-- [6.4 การประมวลผลแบบกลุ่มเมฆกับ Internet of Things (IoT)](#64-การประมวลผลแบบกลุ่มเมฆกับ-internet-of-things-iot)
-- [6.5 การสร้างการประมวลผลแบบกลุ่มเมฆ](#65-การสร้างการประมวลผลแบบกลุ่มเมฆ)
-- [6.6 การประมวลผลแบบกลุ่มเมฆและการเรียนรู้ของเครื่อง (Machine Learning)](#66-การประมวลผลแบบกลุ่มเมฆและการเรียนรู้ของเครื่อง-machine-learning)
+- [6.3 การประยุกต์แบบ PaaS](#63-การประยุกต์แบบ-paas)
+- [6.4 Cloud + IoT](#64-cloud--iot)
+- [6.5 การสร้าง Cloud Computing](#65-การสร้าง-cloud-computing)
+  - [6.5.1 ไฮเปอร์ไวเซอร์ (Hypervisor)](#651-ไฮเปอร์ไวเซอร์-hypervisor)
+  - [6.5.2 การทำงานของ Xen Hypervisor](#652-การทำงานของ-xen-hypervisor)
+- [6.6 Cloud + Machine Learning](#66-cloud--machine-learning)
 - [6.7 คำถามท้ายบท](#67-คำถามท้ายบท)
 
 ---
+
 # **6.1 Microsoft Azure**
 
 ## **6.1.1 Microsoft Azure คืออะไร**
@@ -545,7 +546,7 @@ Things และ การประมวลผลแบบกลุ่มเม
 
 ---
 
-## **6.5.1 ไฮเปอร์ไวเซอร์ (Hypervisor)**
+## 6.5.1 ไฮเปอร์ไวเซอร์ (Hypervisor)
 
 **Hypervisor** หรือเรียกว่า **Virtual Machine Manager (VMM)**  
 คือซอฟต์แวร์ที่ติดตั้งบนเครื่องแม่ข่าย (Host) เพื่อสร้างและจัดการเครื่องเสมือน (VM) โดยสามารถสั่งการให้ Guest OS เข้าถึง CPU, RAM, Storage, Network เสมือน
@@ -555,9 +556,9 @@ Things และ การประมวลผลแบบกลุ่มเม
 
 ---
 
-## **ชนิดของ Hypervisor**
+## ชนิดของ Hypervisor
 
-### 1. **Bare Metal Hypervisor**  
+### 1. Bare Metal Hypervisor
 - ติดตั้งลงบน Hardware โดยตรง ไม่มี OS กลาง  
 - เข้าถึงทรัพยากรได้เร็ว มีประสิทธิภาพสูง  
 - นิยมใช้ในระบบ **เซิร์ฟเวอร์ระดับองค์กร**  
@@ -568,7 +569,7 @@ Things และ การประมวลผลแบบกลุ่มเม
 
 ---
 
-### 2. **Hosted Hypervisor**  
+### 2. Hosted Hypervisor
 - ทำงานภายใต้ระบบปฏิบัติการเดิมของ Host  
 - เข้าถึง Hardware ผ่าน OS ของ Host → ทำให้ช้ากว่าแบบแรก  
 - เหมาะสำหรับผู้ใช้ทั่วไปที่ต้องการทดลองระบบหลาย OS  
@@ -579,14 +580,15 @@ Things และ การประมวลผลแบบกลุ่มเม
 
 ---
 
-## ✅ **สรุปเปรียบเทียบ Hypervisor ทั้ง 2 ประเภท**
+## ✅ สรุปเปรียบเทียบ Hypervisor ทั้ง 2 ประเภท
 
-| ประเภท Hypervisor | ติดตั้ง | ความเร็ว | เหมาะสำหรับ |
-|-------------------|--------|-----------|----------------|
-| **Bare Metal** | บน Hardware | สูงมาก | องค์กร, Server |
-| **Hosted** | บน Host OS | ปานกลาง | ผู้ใช้ทั่วไป, ทดลอง |
+| ประเภท Hypervisor   | ติดตั้ง        | ความเร็ว   | เหมาะสำหรับ           |
+|---------------------|----------------|------------|-----------------------|
+| **Bare Metal**      | บน Hardware    | สูงมาก     | องค์กร, Server       |
+| **Hosted**          | บน Host OS     | ปานกลาง   | ผู้ใช้ทั่วไป, ทดลองระบบ |
 
 <sub>[⬆ กลับไปสารบัญ](#สารบัญ)</sub>
+
 
 ---
 
@@ -605,49 +607,63 @@ Things และ การประมวลผลแบบกลุ่มเม
 ![รูปที่ 6.8 ส่วนประกอบที่เกี่ยวข้องกับ Xen](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure6.8.png)  
 *รูปที่ 6.8 แสดงภาพรวมสถาปัตยกรรม Xen*  
 
-1. **Control Domain (dom0)**  
+1. **Control Domain (dom0)**
    - VM ตัวแรกที่ถูกสร้างขึ้นทันทีหลังบูต  
    - รัน Linux Kernel พิเศษ (Dom0 Kernel)  
-   - ทำหน้าที่เป็น **ตัวจัดการ** (management domain) สร้าง–ลบ หรือปรับแต่ง VM อื่น  
-   - เป็นเพียง VM เดียวที่มีสิทธิ์เข้าถึงอุปกรณ์จริง (I/O, Storage ฯลฯ) โดยตรง  
+   - ทำหน้าที่เป็น **management domain** สร้าง–ลบ หรือปรับแต่ง VM อื่น  
+   - เข้าถึงอุปกรณ์จริง (I/O, Storage) ได้โดยตรง  
 
-2. **Guest Domains (domU)**  
-   - VM ที่ผู้ใช้สร้างขึ้น (เช่น `VM₁, VM₂, …`)  
+2. **Guest Domains (domU)**
+   - VM ที่ผู้ใช้สร้างขึ้น (เช่น `VM₁`, `VM₂`, …)  
    - รัน OS ปกติและแอปพลิเคชันเหมือน VM ทั่วไป  
    - เข้าถึงอุปกรณ์จริงผ่าน dom0 และ Xen Hypervisor  
 
-3. **Xen Hypervisor**  
-   - ทำหน้าที่แบ่งทรัพยากร (CPU, Memory, I/O) ให้แต่ละ domain  
-   - ประกอบด้วยโมดูลสำคัญ เช่น Scheduler, MMU, XSM (security module)  
+3. **Xen Hypervisor**
+   - แบ่งทรัพยากร (CPU, Memory, I/O) ให้แต่ละ domain  
+   - ประกอบด้วยโมดูลสำคัญ เช่น Scheduler, MMU, XSM  
 
-4. **Host Hardware**  
-   - เครื่องจริง (Host HW) ได้แก่ CPU, RAM, Storage, Network Interface  
+4. **Host Hardware**
+   - เครื่องจริง (CPU, RAM, Storage, Network Interface)  
 
 ### 6.5.2.3 ขั้นตอนการสร้างและจัดการ VM
 
 1. **บูตระบบ**  
    - BIOS โหลด Xen Hypervisor ขึ้นมาก่อน  
-   - Hypervisor จะบูต dom0 เป็นลำดับแรก  
+   - Hypervisor จะบูต dom0 เป็นลำดับแรก
+
 2. **จัดการ dom0 ด้วย Virtual Machine Manager**  
-   - ใช้เครื่องมืออย่าง **virt-manager** หรือ **xl**  
-   - ตัวอย่างหน้าต่างการจัดการ dom0:  
-     ![รูปที่ 6.9 การทำงานของ dom0 และ Virtual Machine Manager](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure6.9.png)  
+   - ใช้เครื่องมืออย่าง `virt-manager` หรือ `xl`  
+   - ตัวอย่างหน้าต่างการจัดการ dom0:
+     ```text
+     Virtual Machine Manager - localhost (xen)
+     ----------------------------------------
+     Name           State    CPU%   Memory%
+     ----------------------------------------
+     Domain-0       running   1.2    8.5
+     webserver_01   running   0.5   10.2
+     ```
+
 3. **ตรวจสอบสถานะ dom0**  
-   - คำสั่งตัวอย่าง: `xl list` หรือ `xm list`  
-   - แสดงชื่อ VM, ID, ขนาดเมมโมรี, vCPUs, สถานะ, เวลาทำงาน  
+   - ใช้คำสั่ง CLI เช่น:
      ```bash
-     # xm list
-     Name       ID    Mem  VCPUs  State  Time(s)
-     Domain-0    0   952M     8   r----- 6631.6
-     webserver_01 1 1024M     1   b-----  632.0
-     ```  
-   - ![รูปที่ 6.10 รายละเอียดของ dom0](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure6.10.png)
+     # xl list
+     Name           ID   Mem   VCPUs  State   Time(s)
+     Domain-0        0   952M     8   r-----  6631.6
+     webserver_01    1  1024M     1   b-----   632.0
+     ```
+   - แสดงชื่อ VM, ID, ขนาดเมมโมรี, จำนวน vCPUs, สถานะ และเวลาทำงาน
 
 4. **เข้าใช้งาน domU (Guest VM)**  
-   - เลือก VM ที่ต้องการ แล้ว “Open” ผ่าน Virtual Machine Manager  
-   - ตัวอย่างการเข้าใช้งาน `webserver_01`:  
-     ![รูปที่ 6.11 รายละเอียดของ domU](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/figure6.11.png)  
-   - สามารถควบคุม OS ใน domU ได้เหมือน VM ปกติ เช่น ติดตั้งแอป, ตั้งค่าเครือข่าย เป็นต้น  
+   - เลือก VM ที่ต้องการ แล้วคลิก “Open” ผ่าน Virtual Machine Manager  
+   - ตัวอย่างการเข้าใช้งาน `webserver_01`:
+     ```text
+     # virt-manager
+     Opens console for webserver_01
+     ```
+   - ภายใน domU สามารถติดตั้งแอปพลิเคชัน, ตั้งค่าเครือข่าย และใช้งาน OS ได้ตามปกติ
+
+---
+
 
 ### 6.5.2.4 สรุปประเด็นสำคัญ
 - Xen แยกงาน management (dom0) กับงาน guest VM (domU) อย่างชัดเจน  
