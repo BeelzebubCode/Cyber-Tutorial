@@ -49,7 +49,7 @@ Template นี้ออกแบบมาเพื่อวิเคราะ�
 
 > IaaS แบบ Xen-based ประกอบด้วย dom0, domU, hypervisor และ hardware
 
-![Figure 1 - IaaS Architecture](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure1.png)
+![Figure 1 - IaaS Architecture](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure6.png)
 
 - `dom0` เป็นระบบที่มีสิทธิ์สูง ควบคุมการสร้าง/ลบ domU  
 - `domU` เป็น VM ที่ลูกค้าเช่าใช้งาน  
@@ -63,7 +63,7 @@ Template นี้ออกแบบมาเพื่อวิเคราะ�
 แสดงตำแหน่งของ Logging Process (Px) และ Log File (Fy) บนโครงสร้าง IaaS  
 ใช้เพื่อสร้างระบบ Logging ใหม่ และวิเคราะห์ความเสี่ยงจากการจัดวาง
 
-![Figure 2 - Logging Template](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure2.png)
+![Figure 2 - Logging Template](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure7.png)
 
 ---
 
