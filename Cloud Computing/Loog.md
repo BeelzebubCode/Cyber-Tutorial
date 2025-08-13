@@ -115,7 +115,7 @@ Template นี้ออกแบบมาเพื่อวิเคราะ�
   - source code, database, binary, การทดลอง
 - การเข้าถึงหรือรั่วไหลของข้อมูลถือเป็นภัยคุกคามร้ายแรง
 
-![Figure 3 - Critical File in diskU](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure3.png)
+![Figure 3 - Critical File in diskU](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure8.png)
 
 ---
 
