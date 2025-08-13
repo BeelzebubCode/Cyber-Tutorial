@@ -182,7 +182,7 @@ mail -s "spam a@b.c" addr.txt
 
 ใช้ libVMI ดึงข้อมูลจาก memU ของ domU → บันทึก log ลง disk0
 
-![Figure 5 - System Architecture](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure5.png)
+![Figure 5 - System Architecture](https://github.com/BeelzebubCode/Cyber-Tutorial/blob/main/Cloud%20Computing/Image/Img-Logging/figure12.png)
 
 ---
 
