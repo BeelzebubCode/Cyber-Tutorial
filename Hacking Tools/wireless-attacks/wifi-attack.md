@@ -46,25 +46,30 @@
 
 ```bash
 #!/bin/bash
-# 🕶 Red Team Cloaking Script – Pre-Attack Setup
+# 🕶 Red Team Cloaking Script – Pre-Attack Setup (Interactive Version)
+
+# รับค่า interface และ hostname จากผู้ใช้
+read -p "[?] ใส่ชื่อ Interface (เช่น wlan1): " iface
+read -p "[?] ใส่ชื่อ Hostname ใหม่: " newhost
 
 # เปลี่ยนชื่อเครื่อง
-hostnamectl set-hostname ghostmachine
+hostnamectl set-hostname "$newhost"
 
-# เปลี่ยน MAC address (เช่น wlan1)
-ip link set wlan1 down
-macchanger -r wlan1
-ip link set wlan1 up
+# เปลี่ยน MAC address
+ip link set "$iface" down
+macchanger -r "$iface"
+ip link set "$iface" up
 
 # แสดงผลหลังเปลี่ยน
 echo "[+] Hostname:" $(hostname)
-macchanger -s wlan1
+macchanger -s "$iface"
 
 # ล้าง log พื้นฐาน
 rm -f ~/.zsh_history ~/.bash_history 2>/dev/null
 truncate -s 0 /var/lib/dhcp/dhclient.leases 2>/dev/null
 
-echo "[+] Cloaking complete. Ready for Monitor Mode."
+echo "[+] Cloaking complete on $iface. Ready for Monitor Mode."
+
 ```
 
 ### ✅ เทคนิคเสริม
