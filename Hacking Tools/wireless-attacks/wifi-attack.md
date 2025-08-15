@@ -202,8 +202,6 @@ done
 - ถ้าเจอ error เกี่ยวกับ `negative one (-1)` → เพิ่ม `--ignore-negative-one`
 - อย่าลืมตรวจสอบว่า adapter รองรับ **packet injection** ด้วย `aireplay-ng --test wlan1`
 
----
-
 📚 **Reference**
 
 - https://www.aircrack-ng.org/doku.php?id=aireplay-ng
