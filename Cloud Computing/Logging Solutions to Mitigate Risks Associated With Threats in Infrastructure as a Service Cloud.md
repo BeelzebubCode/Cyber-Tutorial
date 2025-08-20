@@ -1,7 +1,5 @@
 # 🧱 Logging Solutions to Mitigate Risks Associated With Threats in Infrastructure as a Service Cloud
 
----
-
 ## 📑 สารบัญ
 
 - [📌 ภาพรวม Logging Template](#-ภาพรวม-logging-template)
