@@ -1,8 +1,5 @@
 # 🧱 Logging Solutions to Mitigate Risks Associated With Threats in Infrastructure as a Service Cloud
 
-> จากงานวิจัย: *"A Generic Logging Template for Infrastructure as a Service Cloud"*  
-> โดย Winai Wongthai, Francisco Liberal Rocha, Aad van Moorsel (Newcastle University)
-
 ---
 
 ## 📑 สารบัญ
